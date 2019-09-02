@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be3f8620-94a3-4b46-90e8-aac004ee1f0b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Context/MainContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <marker date="1567088625306" expanded="true" signature="6:215" ph="..." />
+                <marker date="1567088625306" expanded="true" signature="243:4426" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="286:4424" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="1068:1366" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="1443:1634" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="1705:2344" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="2415:3697" ph="{...}" />
+                <marker date="1567088625306" expanded="true" signature="3765:4418" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/NLog.Development.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomJob.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+              <folding>
+                <marker date="1567089245340" expanded="false" signature="6:90" ph="..." />
+                <marker date="1567089245340" expanded="true" signature="134:450" ph="{...}" />
+                <marker date="1567089245340" expanded="true" signature="161:448" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomWallObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding>
+                <marker date="1567088357396" expanded="true" signature="6:47" ph="..." />
+                <marker date="1567088357396" expanded="true" signature="91:484" ph="{...}" />
+                <marker date="1567088357396" expanded="true" signature="125:482" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Material.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="19" column="76" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="76" />
+              <folding>
+                <marker date="1567083008961" expanded="false" signature="6:47" ph="..." />
+                <marker date="1567083008961" expanded="true" signature="94:574" ph="{...}" />
+                <marker date="1567083008961" expanded="true" signature="122:572" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialExpenditure.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <marker date="1567088493066" expanded="true" signature="60:405" ph="{...}" />
+                <marker date="1567088493066" expanded="true" signature="99:403" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialInformation.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <marker date="1567088493057" expanded="true" signature="60:451" ph="{...}" />
+                <marker date="1567088493057" expanded="true" signature="99:449" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Provider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <marker date="1567088384902" expanded="true" signature="60:440" ph="{...}" />
+                <marker date="1567088384902" expanded="true" signature="88:438" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+              <folding>
+                <marker date="1567088181862" expanded="false" signature="6:349" ph="..." />
+                <marker date="1567088181862" expanded="true" signature="369:1286" ph="{...}" />
+                <marker date="1567088181862" expanded="true" signature="396:1284" ph="{...}" />
+                <marker date="1567088181862" expanded="true" signature="625:861" ph="{...}" />
+                <marker date="1567088181862" expanded="true" signature="1049:1278" ph="{...}" />
+                <marker date="1567088181862" expanded="true" signature="1096:1173" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <marker date="1567087331544" expanded="false" signature="6:271" ph="..." />
+                <marker date="1567087331544" expanded="true" signature="291:1022" ph="{...}" />
+                <marker date="1567087331544" expanded="true" signature="318:1020" ph="{...}" />
+                <marker date="1567087331544" expanded="true" signature="377:491" ph="{...}" />
+                <marker date="1567087331544" expanded="true" signature="697:914" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Tools/AppSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/RoomObjectType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/RoomType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/MaterialType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialExpenditure.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Material.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus/Context/MainContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus/NLog.Development.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Provider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialInformation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/House.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomWallObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomJob.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IntDesign.Calculus/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Calculus.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/Calculus.Core/Models/Enums/RoomType.cs" />
+        <option value="$PROJECT_DIR$/Calculus.Core/Models/House.cs" />
+        <option value="$PROJECT_DIR$/Calculus.Core/Models/Room.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Door.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Window.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/RoomObjects.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/RoomObject.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/RoomObjectType.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Room.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/MaterialType.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Provider.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Material.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/RoomJob.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialInformation.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/RoomExpenditure.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialExpenditure.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Materials/Material.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/RoomWallObject.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/House.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Material.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/Context/DatabaseConnection.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/Room.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/NLog.Development.config" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/Program.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Tools/AppSettings.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/appsettings.json" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/Startup.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomWallObject.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialExpenditure.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialInformation.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Provider.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus/Context/MainContext.cs" />
+        <option value="$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomJob.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.Calculus/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.Calculus">
+    <configuration name="Calculus" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Calculus/Calculus.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="Calculus" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Calculus: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Calculus/Calculus.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be3f8620-94a3-4b46-90e8-aac004ee1f0b" name="Default Changelist" comment="" />
+      <created>1567062286479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567062286479</updated>
+      <workItem from="1567062289835" duration="2027000" />
+      <workItem from="1567067332503" duration="12017000" />
+      <workItem from="1567151150369" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14124000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25519446" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="REST Client" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" visible="true" weight="0.32975295" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Calculus.Core/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/RoomType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <marker date="1567063882687" expanded="true" signature="36:185" ph="{...}" />
+            <marker date="1567063882687" expanded="true" signature="63:183" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Door.cs" />
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Window.cs" />
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/RoomObjectType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <marker date="1567067797133" expanded="true" signature="36:120" ph="{...}" />
+            <marker date="1567067797133" expanded="true" signature="69:118" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Enums/MaterialType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1567074997249" expanded="true" signature="36:90" ph="{...}" />
+            <marker date="1567074997249" expanded="true" signature="67:88" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/appsettings.Development.json" />
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/House.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <marker date="1567082844307" expanded="false" signature="6:47" ph="..." />
+            <marker date="1567082844307" expanded="true" signature="91:412" ph="{...}" />
+            <marker date="1567082844307" expanded="true" signature="116:410" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Context/DatabaseConnection.cs" />
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/Tools/AppSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <marker date="1567087978982" expanded="true" signature="36:134" ph="{...}" />
+            <marker date="1567087978982" expanded="true" signature="67:132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/Room.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <marker date="1567085650375" expanded="false" signature="6:47" ph="..." />
+            <marker date="1567085650375" expanded="true" signature="91:653" ph="{...}" />
+            <marker date="1567085650375" expanded="true" signature="115:651" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Context/MainContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <marker date="1567088625306" expanded="true" signature="6:215" ph="..." />
+            <marker date="1567088625306" expanded="true" signature="243:4426" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="286:4424" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="1068:1366" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="1443:1634" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="1705:2344" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="2415:3697" ph="{...}" />
+            <marker date="1567088625306" expanded="true" signature="3765:4418" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/NLog.Development.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomWallObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1567088357396" expanded="true" signature="6:47" ph="..." />
+            <marker date="1567088357396" expanded="true" signature="91:484" ph="{...}" />
+            <marker date="1567088357396" expanded="true" signature="125:482" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Material.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="76" />
+          <folding>
+            <marker date="1567083008961" expanded="false" signature="6:47" ph="..." />
+            <marker date="1567083008961" expanded="true" signature="94:574" ph="{...}" />
+            <marker date="1567083008961" expanded="true" signature="122:572" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialExpenditure.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <marker date="1567088493066" expanded="true" signature="60:405" ph="{...}" />
+            <marker date="1567088493066" expanded="true" signature="99:403" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/MaterialInformation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <marker date="1567088493057" expanded="true" signature="60:451" ph="{...}" />
+            <marker date="1567088493057" expanded="true" signature="99:449" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/MaterialModels/Provider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <marker date="1567088384902" expanded="true" signature="60:440" ph="{...}" />
+            <marker date="1567088384902" expanded="true" signature="88:438" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <marker date="1567088181862" expanded="false" signature="6:349" ph="..." />
+            <marker date="1567088181862" expanded="true" signature="369:1286" ph="{...}" />
+            <marker date="1567088181862" expanded="true" signature="396:1284" ph="{...}" />
+            <marker date="1567088181862" expanded="true" signature="625:861" ph="{...}" />
+            <marker date="1567088181862" expanded="true" signature="1049:1278" ph="{...}" />
+            <marker date="1567088181862" expanded="true" signature="1096:1173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1567087331544" expanded="false" signature="6:271" ph="..." />
+            <marker date="1567087331544" expanded="true" signature="291:1022" ph="{...}" />
+            <marker date="1567087331544" expanded="true" signature="318:1020" ph="{...}" />
+            <marker date="1567087331544" expanded="true" signature="377:491" ph="{...}" />
+            <marker date="1567087331544" expanded="true" signature="697:914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntDesign.Calculus.Core/Models/HouseModels/RoomJob.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding>
+            <marker date="1567089245340" expanded="false" signature="6:90" ph="..." />
+            <marker date="1567089245340" expanded="true" signature="161:448" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

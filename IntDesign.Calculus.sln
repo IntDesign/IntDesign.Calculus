@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntDesign.Calculus", "IntDesign.Calculus\IntDesign.Calculus.csproj", "{0DBA6D15-5CC5-447F-A89A-9EC57312379B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntDesign.Calculus.Core", "IntDesign.Calculus.Core\IntDesign.Calculus.Core.csproj", "{96893D73-525B-4384-8872-2C93CC83F7F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBA6D15-5CC5-447F-A89A-9EC57312379B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBA6D15-5CC5-447F-A89A-9EC57312379B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBA6D15-5CC5-447F-A89A-9EC57312379B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBA6D15-5CC5-447F-A89A-9EC57312379B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96893D73-525B-4384-8872-2C93CC83F7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96893D73-525B-4384-8872-2C93CC83F7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96893D73-525B-4384-8872-2C93CC83F7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96893D73-525B-4384-8872-2C93CC83F7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
