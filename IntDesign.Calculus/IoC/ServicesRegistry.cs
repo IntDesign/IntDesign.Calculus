@@ -1,4 +1,3 @@
-using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.enums;
 using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.schemas;
@@ -9,7 +8,6 @@ using Calculus.Repositories.models;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Types;
-using GraphQL.Utilities;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Calculus.IoC
@@ -29,7 +27,6 @@ namespace Calculus.IoC
 
             services.AddScoped<ISchemaGroup, HouseSchema>();
             services.AddSingleton<OrderDirectionEnum>();
-            GraphTypeTypeRegistry.Register(typeof(OrderDirection), typeof(EnumerationGraphType<OrderDirection>));
             services.AddScoped<RootSchema>();
             services.AddScoped<RootMutation>();
 
