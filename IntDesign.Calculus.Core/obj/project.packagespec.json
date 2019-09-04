@@ -29,6 +29,10 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "GraphQL": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

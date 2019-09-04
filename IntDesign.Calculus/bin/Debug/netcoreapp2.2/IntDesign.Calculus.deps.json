@@ -280,6 +280,9 @@
         }
       },
       "IntDesign.Calculus.Core/1.0.0": {
+        "dependencies": {
+          "GraphQL": "2.4.0"
+        },
         "runtime": {
           "IntDesign.Calculus.Core.dll": {}
         },

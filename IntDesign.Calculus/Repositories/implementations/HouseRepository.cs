@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Calculus.Context;
+using Calculus.Context.extensions;
+using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.JobModels;
-using Calculus.GraphQL.helpers;
 using Calculus.Repositories.models;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +16,10 @@ namespace Calculus.Repositories.implementations
     {
         private readonly MainContext m_context;
 
-        public HouseRepository(MainContext context) => m_context = context;
+        public HouseRepository(MainContext context)
+        {
+            m_context = context;
+        }
 
         public async Task<House> AddHouse(House house)
         {
@@ -31,15 +36,16 @@ namespace Calculus.Repositories.implementations
             return house;
         }
 
-        public async Task<ListResult<House>> SearchAsync(HouseFiltering filtering)
+        public async Task<Tuple<int, List<House>>> SearchAsync(HouseFiltering filtering, PagedRequest pagination,
+            OrderedRequest ordering)
         {
-            var query = filtering.Filter(m_context.Houses.AsQueryable());
-            var result = await query.ToListAsync();
-            return new ListResult<House>
-            {
-                Items = result,
-                TotalCount = result.Count
-            };
+            return await filtering.Filter(m_context.Houses.AsQueryable())
+                .WithOrdering(ordering, new OrderedRequest
+                {
+                    OrderBy = nameof(House.Id),
+                    OrderDirection = OrderDirection.Asc
+                })
+                .WithPaginationAsync(pagination);
         }
     }
 }

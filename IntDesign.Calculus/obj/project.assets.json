@@ -4677,6 +4677,9 @@
       "IntDesign.Calculus.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "GraphQL": "2.4.0"
+        },
         "compile": {
           "bin/placeholder/IntDesign.Calculus.Core.dll": {}
         },
