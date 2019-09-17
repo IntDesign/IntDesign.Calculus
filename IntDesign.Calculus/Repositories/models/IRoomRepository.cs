@@ -7,12 +7,12 @@ using Calculus.Core.Models.MainModels;
 
 namespace Calculus.Repositories.models
 {
-    public interface IHouseRepository
+    public interface IRoomRepository
     {
-        Task<House> AddHouse(House house);
-        Task<House> RemoveHouse(Guid id);
+        Task<Room> AddRoom(Room room);
+        Task<Room> RemoveRoom(Guid roomId);
 
-        Task<Tuple<int, List<House>>> SearchAsync(HouseFilter filter, PagedRequest pagination,
+        Task<Tuple<int, List<Room>>> SearchAsync(RoomFilter filter, PagedRequest pagination,
             OrderedRequest ordering);
     }
 }

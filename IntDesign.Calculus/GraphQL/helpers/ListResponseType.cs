@@ -14,14 +14,18 @@ namespace Calculus.GraphQL.helpers
                 .Description("A list of all of the objects returned in the connection.");
         }
     }
-    
+
     public class ListResult<T>
     {
         public long TotalCount { get; set; }
         public IList<T> Items { get; set; }
     }
-    
+
     public class ListHouseQueryModelType : ListResponseType<HouseQueryType>
+    {
+    }
+
+    public class ListRoomQueryModelType : ListResponseType<RoomQueryType>
     {
     }
 }

@@ -23,9 +23,14 @@
                 <e p="HouseCreateViewModel.cs" t="Include" />
                 <e p="HouseFilteredRequestType.cs" t="Include" />
               </e>
+              <e p="room" t="Include">
+                <e p="RoomCreateViewModel.cs" t="Include" />
+                <e p="RoomFilteredRequestType.cs" t="Include" />
+              </e>
             </e>
             <e p="types" t="Include">
               <e p="HouseQueryType.cs" t="Include" />
+              <e p="RoomQueryType.cs" t="Include" />
             </e>
           </e>
           <e p="helpers" t="Include">
@@ -35,10 +40,12 @@
           </e>
           <e p="mutation" t="Include">
             <e p="HouseMutation.cs" t="Include" />
+            <e p="RoomMutation.cs" t="Include" />
             <e p="RootMutation.cs" t="Include" />
           </e>
           <e p="queries" t="Include">
             <e p="HouseQueries.cs" t="Include" />
+            <e p="RoomQueries.cs" t="Include" />
             <e p="RootQuery.cs" t="Include" />
           </e>
           <e p="schemas" t="Include">
@@ -48,6 +55,7 @@
             <e p="RootSchema.cs" t="Include" />
             <e p="schemaGroups" t="Include">
               <e p="HouseSchema.cs" t="Include" />
+              <e p="RoomSchema.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -64,6 +72,8 @@
           <e p="20190829143423_BasicModelsAddedV2.Designer.cs" t="Include" />
           <e p="20190902110235_UpdatedIdType.cs" t="Include" />
           <e p="20190902110235_UpdatedIdType.Designer.cs" t="Include" />
+          <e p="20190917104257_UpdateMainModelsRefactoringAndFields.cs" t="Include" />
+          <e p="20190917104257_UpdateMainModelsRefactoringAndFields.Designer.cs" t="Include" />
           <e p="MainContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="NLog.Development.config" t="Include" />
@@ -81,9 +91,11 @@
         <e p="Repositories" t="Include">
           <e p="implementations" t="Include">
             <e p="HouseRepository.cs" t="Include" />
+            <e p="RoomRepository.cs" t="Include" />
           </e>
           <e p="models" t="Include">
             <e p="IHouseRepository.cs" t="Include" />
+            <e p="IRoomRepository.cs" t="Include" />
           </e>
         </e>
         <e p="Startup.cs" t="Include" />
@@ -102,19 +114,19 @@
               <e p="EnumTypes.cs" t="Include" />
             </e>
             <e p="filters" t="Include">
-              <e p="HouseFiltering.cs" t="Include" />
-              <e p="ISearchTermFilter.cs" t="Include" />
+              <e p="HouseFilter.cs" t="Include" />
+              <e p="RoomFilter.cs" t="Include" />
             </e>
             <e p="OrderedRequest.cs" t="Include" />
             <e p="PagedRequest.cs" t="Include" />
           </e>
-          <e p="JobModels" t="Include">
+          <e p="MainModels" t="Include">
             <e p="House.cs" t="Include" />
             <e p="Room.cs" t="Include" />
             <e p="RoomJob.cs" t="Include" />
             <e p="RoomWallObject.cs" t="Include" />
           </e>
-          <e p="MaterialModels" t="Include">
+          <e p="SecondaryModels" t="Include">
             <e p="Material.cs" t="Include" />
             <e p="MaterialExpenditure.cs" t="Include" />
             <e p="MaterialInformation.cs" t="Include" />
@@ -123,6 +135,7 @@
           <e p="Tools" t="Include">
             <e p="AppSettings.cs" t="Include" />
             <e p="IIdentifier.cs" t="Include" />
+            <e p="ISearchTermFilter.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">

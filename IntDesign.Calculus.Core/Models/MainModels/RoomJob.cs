@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Calculus.Core.Models.GraphQl.filters;
-using Calculus.Core.Models.MaterialModels;
+using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.Models.Tools;
 
-namespace Calculus.Core.Models.JobModels
+namespace Calculus.Core.Models.MainModels
 {
     public class RoomJob : IIdentifier
     {

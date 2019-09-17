@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace Calculus.Core.Models.GraphQl.filters
+namespace Calculus.Core.Models.Tools
 {
     public interface ISearchTermFilter<T> where T : IQueryable<IIdentifier>
     {

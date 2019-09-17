@@ -1,6 +1,6 @@
 using System;
 
-namespace Calculus.Core.Models.GraphQl.filters
+namespace Calculus.Core.Models.Tools
 {
     public interface IIdentifier
     {

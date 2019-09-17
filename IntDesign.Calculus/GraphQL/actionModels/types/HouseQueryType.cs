@@ -1,4 +1,4 @@
-using Calculus.Core.Models.JobModels;
+using Calculus.Core.Models.MainModels;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModels.types
@@ -12,7 +12,6 @@ namespace Calculus.GraphQL.actionModels.types
             Field(t => t.OwnerName, false, typeof(StringGraphType)).Description("House ID");
             Field(t => t.OwnerEmail, true, typeof(StringGraphType)).Description("House ID");
             Field(t => t.OwnerPhone, false, typeof(StringGraphType)).Description("House ID");
-            
         }
     }
 }

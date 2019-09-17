@@ -1,5 +1,5 @@
-using Calculus.Core.Models.JobModels;
-using Calculus.Core.Models.MaterialModels;
+using Calculus.Core.Models.MainModels;
+using Calculus.Core.Models.SecondaryModels;
 using Calculus.Core.Models.Tools;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -20,7 +20,7 @@ namespace Calculus.Context
 
         public DbSet<Material> Materials { get; set; }
         public DbSet<MaterialExpenditure> MaterialExpenditures { get; set; }
-        public DbSet<MaterialInformation> MaterialInformations { get; set; }
+        public DbSet<MaterialInformation> MaterialInformation { get; set; }
         public DbSet<Provider> Providers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,25 +1,26 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Calculus.Core.Models.JobModels;
+using Calculus.Core.Models.MainModels;
+using Calculus.Core.Models.Tools;
 
 namespace Calculus.Core.Models.GraphQl.filters
 {
-    public class HouseFiltering : ISearchTermFilter<IQueryable<House>>
+    public class HouseFilter : ISearchTermFilter<IQueryable<House>>
     {
-        public HouseFiltering()
+        public List<Guid> Ids { get; } = new List<Guid>();
+        public List<string> Names { get; } = new List<string>();
+
+        public HouseFilter()
         {
         }
 
-        public HouseFiltering(string searchTerm = null, List<Guid> ids = null, List<string> names = null)
+        public HouseFilter(string searchTerm = null, List<Guid> ids = null, List<string> names = null)
         {
             if (ids != null) Ids = ids;
             if (names != null) Names = names;
             SearchTerm = searchTerm;
         }
-
-        public List<Guid> Ids { get; set; } = new List<Guid>();
-        public List<string> Names { get; set; } = new List<string>();
 
         public string SearchTerm { get; set; }
 
@@ -47,10 +48,10 @@ namespace Calculus.Core.Models.GraphQl.filters
 
         private bool CheckContains(House house)
         {
-           return house.OwnerName.Contains(SearchTerm) || 
-                        house.HouseAddress.Contains(SearchTerm) ||
-                        house.OwnerPhone.Contains(SearchTerm) || 
-                        !string.IsNullOrEmpty(house.OwnerEmail) && house.OwnerEmail.Contains(SearchTerm);
+            return house.OwnerName.Contains(SearchTerm) ||
+                   house.HouseAddress.Contains(SearchTerm) ||
+                   house.OwnerPhone.Contains(SearchTerm) ||
+                   !string.IsNullOrEmpty(house.OwnerEmail) && house.OwnerEmail.Contains(SearchTerm);
         }
     }
 }

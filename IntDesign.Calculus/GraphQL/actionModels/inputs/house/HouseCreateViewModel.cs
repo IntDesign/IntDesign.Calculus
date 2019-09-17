@@ -1,4 +1,4 @@
-using Calculus.Core.Models.JobModels;
+using Calculus.Core.Models.MainModels;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModels.inputs.house

@@ -1,8 +1,8 @@
 using System;
 using Calculus.Core.Models.Enums;
-using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.Models.Tools;
 
-namespace Calculus.Core.Models.MaterialModels
+namespace Calculus.Core.Models.SecondaryModels
 {
     public class Material : IIdentifier
     {
