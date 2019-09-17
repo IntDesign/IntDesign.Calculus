@@ -1,9 +1,8 @@
 namespace Calculus.Core.Models.Enums
 {
-    public enum RoomObjectType
+    public enum JobType
     {
         Invalid = -1,
-        Door = 0,
-        Window = 1
+        Paint = 0
     }
 }

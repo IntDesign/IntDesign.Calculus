@@ -2,10 +2,11 @@ namespace Calculus.Core.Models.Enums
 {
     public enum RoomType
     {
+        Invalid = -1,
         Kitchen = 0,
-        Bathroom = 1,
+        BathRoom = 1,
         Hallway = 2,
-        Bedroom = 3,
-        Livingroom = 4
+        BedRoom = 3,
+        LivingRoom = 4
     }
 }

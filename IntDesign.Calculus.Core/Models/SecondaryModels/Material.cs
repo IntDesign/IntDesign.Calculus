@@ -10,7 +10,7 @@ namespace Calculus.Core.Models.SecondaryModels
 
         public string MaterialName { get; set; }
         
-        public MaterialType MaterialType { get; set; }
+        public MaterialType Type { get; set; }
         
         public float PricePerPacket { get; set; }
         

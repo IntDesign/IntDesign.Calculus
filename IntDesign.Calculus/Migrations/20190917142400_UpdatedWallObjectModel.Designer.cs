@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190917142400_UpdatedWallObjectModel")]
+    partial class UpdatedWallObjectModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,10 +62,6 @@ namespace Calculus.Migrations
 
                     b.Property<float>("SpecialAfm");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(40)");
-
                     b.Property<float>("Width");
 
                     b.HasKey("Id");
@@ -86,10 +84,6 @@ namespace Calculus.Migrations
 
                     b.Property<DateTime>("StartDate");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(40)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("Id");
@@ -111,9 +105,7 @@ namespace Calculus.Migrations
 
                     b.Property<Guid>("RoomId");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(40)");
+                    b.Property<int>("Type");
 
                     b.Property<float>("Width");
 
@@ -133,13 +125,11 @@ namespace Calculus.Migrations
 
                     b.Property<string>("MaterialName");
 
+                    b.Property<int>("MaterialType");
+
                     b.Property<float>("PricePerPacket");
 
                     b.Property<Guid?>("RoomJobId");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(40)");
 
                     b.HasKey("Id");
 

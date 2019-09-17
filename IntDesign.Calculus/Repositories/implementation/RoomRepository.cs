@@ -7,10 +7,10 @@ using Calculus.Context.extensions;
 using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.MainModels;
-using Calculus.Repositories.models;
+using Calculus.Repositories.model;
 using Microsoft.EntityFrameworkCore;
 
-namespace Calculus.Repositories.implementations
+namespace Calculus.Repositories.implementation
 {
     public class RoomRepository : IRoomRepository
     {
@@ -33,6 +33,16 @@ namespace Calculus.Repositories.implementations
             m_context.Rooms.Remove(room);
             await m_context.SaveChangesAsync();
             return room;
+        }
+
+        public async Task UpdateRoomValues(Guid roomId)
+        {
+            var room = await m_context.Rooms.Include(t => t.RoomObjects)
+                .Where(t => t.Id == roomId)
+                .FirstOrDefaultAsync();
+            room.EmptyAsp = room.Asp -  room.RoomObjects.Sum(roomObject => roomObject.Area);
+            m_context.Rooms.Update(room);
+            await m_context.SaveChangesAsync();
         }
 
         public async Task<Tuple<int, List<Room>>> SearchAsync(RoomFilter filter, PagedRequest pagination,

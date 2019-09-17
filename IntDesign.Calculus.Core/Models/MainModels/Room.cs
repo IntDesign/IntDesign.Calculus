@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Calculus.Core.Models.Enums;
 using Calculus.Core.Models.Tools;
 
 namespace Calculus.Core.Models.MainModels
@@ -16,6 +17,8 @@ namespace Calculus.Core.Models.MainModels
         public float EmptyAsp { get; set; }
         public float Afm { get; set; }
         public float SpecialAfm { get; set; }
+        
+        public RoomType Type { get; set; }
         public Guid HouseId { get; set; }
         public House House { get; set; }
         public RoomJob RoomJob { get; set; }

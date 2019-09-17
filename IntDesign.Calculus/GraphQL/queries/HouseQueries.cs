@@ -2,9 +2,9 @@ using System;
 using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.MainModels;
-using Calculus.GraphQL.actionModels.inputs.house;
+using Calculus.GraphQL.actionModel.input.house;
 using Calculus.GraphQL.helpers;
-using Calculus.Repositories.models;
+using Calculus.Repositories.model;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.queries

@@ -1,7 +1,7 @@
 using Calculus.Core.Models.MainModels;
 using GraphQL.Types;
 
-namespace Calculus.GraphQL.actionModels.inputs.house
+namespace Calculus.GraphQL.actionModel.input.house
 {
     public class HouseCreateViewModel : InputObjectGraphType<House>
     {

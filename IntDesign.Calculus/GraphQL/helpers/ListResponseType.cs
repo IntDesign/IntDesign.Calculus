@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Calculus.GraphQL.actionModels.types;
+using Calculus.GraphQL.actionModel.output;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.helpers

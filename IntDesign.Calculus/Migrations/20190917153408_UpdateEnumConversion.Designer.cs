@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190917153408_UpdateEnumConversion")]
+    partial class UpdateEnumConversion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,7 +64,8 @@ namespace Calculus.Migrations
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("varchar(40)");
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue("Invalid");
 
                     b.Property<float>("Width");
 
@@ -88,7 +91,8 @@ namespace Calculus.Migrations
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("varchar(40)");
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue("Invalid");
 
                     b.HasKey("Id");
 
@@ -113,7 +117,8 @@ namespace Calculus.Migrations
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("varchar(40)");
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue("Invalid");
 
                     b.Property<float>("Width");
 
@@ -139,7 +144,8 @@ namespace Calculus.Migrations
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("varchar(40)");
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue("Invalid");
 
                     b.HasKey("Id");
 

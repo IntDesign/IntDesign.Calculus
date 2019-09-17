@@ -19,9 +19,9 @@ namespace Calculus.Core.Models.GraphQl.enums
         }
     }
 
-    public class RoomObjectTypeEnum : EnumerationGraphType<RoomObjectType>
+    public class RoomWallObjectTypeEnum : EnumerationGraphType<RoomObjectType>
     {
-        public RoomObjectTypeEnum()
+        public RoomWallObjectTypeEnum()
         {
             Description = "Room Object Type";
         }
@@ -32,6 +32,14 @@ namespace Calculus.Core.Models.GraphQl.enums
         public RoomTypeEnum()
         {
             Description = "Room Type";
+        }
+    }
+    
+    public class JobTypeEnum : EnumerationGraphType<JobType>
+    {
+        public JobTypeEnum()
+        {
+            Description = "RoomJob Type";
         }
     }
 }

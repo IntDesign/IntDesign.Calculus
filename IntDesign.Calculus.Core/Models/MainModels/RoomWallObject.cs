@@ -11,7 +11,6 @@ namespace Calculus.Core.Models.MainModels
         public RoomObjectType Type { get; set; }
         public float Lenght { get; set; }
         public float Width { get; set; }
-        public float Height { get; set; }
         public float Area { get; set; }
         public Room Room { get; set; }
     }

@@ -1,17 +1,17 @@
 using System;
 using Calculus.Core.Models.MainModels;
-using Calculus.GraphQL.actionModels.inputs.house;
-using Calculus.GraphQL.actionModels.types;
-using Calculus.Repositories.models;
+using Calculus.GraphQL.actionModel.input.house;
+using Calculus.GraphQL.actionModel.output;
+using Calculus.Repositories.model;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.mutation
 {
     public class HouseMutation : ObjectGraphType
     {
-        public HouseMutation(IHouseRepository houseRepository)
+        public HouseMutation(IHouseRepository repository)
         {
-            var mHouseRepository = houseRepository;
+            var mHouseRepository = repository;
             FieldAsync<HouseQueryType>(
                 "addHouse",
                 arguments: new QueryArguments(new QueryArgument<NonNullGraphType<HouseCreateViewModel>>
@@ -21,7 +21,7 @@ namespace Calculus.GraphQL.mutation
                 resolve: async context =>
                 {
                     var house = context.GetArgument<House>("house");
-                    return await context.TryAsyncResolve(async c => await mHouseRepository.AddHouse(house));
+                    return await context.TryAsyncResolve(async _ => await mHouseRepository.AddHouse(house));
                 }
             );
 

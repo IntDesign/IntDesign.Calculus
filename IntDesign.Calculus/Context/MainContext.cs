@@ -1,3 +1,5 @@
+using System;
+using Calculus.Core.Models.Enums;
 using Calculus.Core.Models.MainModels;
 using Calculus.Core.Models.SecondaryModels;
 using Calculus.Core.Models.Tools;
@@ -38,6 +40,7 @@ namespace Calculus.Context
             SetPrimaryKeys(modelBuilder);
             SetForeignKeys(modelBuilder);
             SetAllIndex(modelBuilder);
+            SetEnumConversion(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 
@@ -60,7 +63,7 @@ namespace Calculus.Context
                 .HasOne(r => r.House)
                 .WithMany(h => h.HouseRooms)
                 .HasForeignKey(r => r.HouseId);
-            
+
             modelBuilder.Entity<RoomWallObject>()
                 .HasOne(rw => rw.Room)
                 .WithMany(r => r.RoomObjects)
@@ -99,6 +102,29 @@ namespace Calculus.Context
             modelBuilder.Entity<MaterialInformation>().HasIndex(mi => mi.Id);
             modelBuilder.Entity<MaterialExpenditure>().HasIndex(me => me.Id);
             modelBuilder.Entity<Provider>().HasIndex(p => p.Id);
+        }
+
+        private static void SetEnumConversion(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Room>().Property(t => t.Type).HasConversion(
+                e => e.ToString(),
+                p => (RoomType) Enum.Parse(typeof(RoomType), p)
+            ).HasColumnType("varchar(40)");
+
+            modelBuilder.Entity<RoomWallObject>().Property(t => t.Type).HasConversion(
+                e => e.ToString(),
+                p => (RoomObjectType) Enum.Parse(typeof(RoomObjectType), p)
+            ).HasColumnType("varchar(40)");
+
+            modelBuilder.Entity<Material>().Property(t => t.Type).HasConversion(
+                e => e.ToString(),
+                p => (MaterialType) Enum.Parse(typeof(MaterialType), p)
+            ).HasColumnType("varchar(40)");
+
+            modelBuilder.Entity<RoomJob>().Property(t => t.Type).HasConversion(
+                e => e.ToString(),
+                p => (JobType) Enum.Parse(typeof(JobType), p)
+            ).HasColumnType("varchar(40)");
         }
     }
 }

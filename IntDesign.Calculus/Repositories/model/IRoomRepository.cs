@@ -5,13 +5,13 @@ using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.MainModels;
 
-namespace Calculus.Repositories.models
+namespace Calculus.Repositories.model
 {
     public interface IRoomRepository
     {
         Task<Room> AddRoom(Room room);
         Task<Room> RemoveRoom(Guid roomId);
-
+        Task UpdateRoomValues(Guid roomId);
         Task<Tuple<int, List<Room>>> SearchAsync(RoomFilter filter, PagedRequest pagination,
             OrderedRequest ordering);
     }

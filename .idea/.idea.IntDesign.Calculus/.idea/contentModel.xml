@@ -17,8 +17,8 @@
           <e p="MainContext.cs" t="Include" />
         </e>
         <e p="GraphQL" t="Include">
-          <e p="actionModels" t="Include">
-            <e p="inputs" t="Include">
+          <e p="actionModel" t="Include">
+            <e p="input" t="Include">
               <e p="house" t="Include">
                 <e p="HouseCreateViewModel.cs" t="Include" />
                 <e p="HouseFilteredRequestType.cs" t="Include" />
@@ -27,10 +27,15 @@
                 <e p="RoomCreateViewModel.cs" t="Include" />
                 <e p="RoomFilteredRequestType.cs" t="Include" />
               </e>
+              <e p="roomWallObject" t="Include">
+                <e p="RoomWallObjectCreateViewModel.cs" t="Include" />
+                <e p="RoomWallObjectFilteredRequestType.cs" t="Include" />
+              </e>
             </e>
-            <e p="types" t="Include">
+            <e p="output" t="Include">
               <e p="HouseQueryType.cs" t="Include" />
               <e p="RoomQueryType.cs" t="Include" />
+              <e p="RoomWallObjectQueryType.cs" t="Include" />
             </e>
           </e>
           <e p="helpers" t="Include">
@@ -41,6 +46,7 @@
           <e p="mutation" t="Include">
             <e p="HouseMutation.cs" t="Include" />
             <e p="RoomMutation.cs" t="Include" />
+            <e p="RoomWallObjectMutation.cs" t="Include" />
             <e p="RootMutation.cs" t="Include" />
           </e>
           <e p="queries" t="Include">
@@ -74,6 +80,12 @@
           <e p="20190902110235_UpdatedIdType.Designer.cs" t="Include" />
           <e p="20190917104257_UpdateMainModelsRefactoringAndFields.cs" t="Include" />
           <e p="20190917104257_UpdateMainModelsRefactoringAndFields.Designer.cs" t="Include" />
+          <e p="20190917142400_UpdatedWallObjectModel.cs" t="Include" />
+          <e p="20190917142400_UpdatedWallObjectModel.Designer.cs" t="Include" />
+          <e p="20190917153408_UpdateEnumConversion.cs" t="Include" />
+          <e p="20190917153408_UpdateEnumConversion.Designer.cs" t="Include" />
+          <e p="20190917154408_UpdateEnumConversionTypeChange.cs" t="Include" />
+          <e p="20190917154408_UpdateEnumConversionTypeChange.Designer.cs" t="Include" />
           <e p="MainContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="NLog.Development.config" t="Include" />
@@ -89,13 +101,15 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Repositories" t="Include">
-          <e p="implementations" t="Include">
+          <e p="implementation" t="Include">
             <e p="HouseRepository.cs" t="Include" />
             <e p="RoomRepository.cs" t="Include" />
+            <e p="RoomWallObjectRepository.cs" t="Include" />
           </e>
-          <e p="models" t="Include">
+          <e p="model" t="Include">
             <e p="IHouseRepository.cs" t="Include" />
             <e p="IRoomRepository.cs" t="Include" />
+            <e p="IRoomWallObjectRepository.cs" t="Include" />
           </e>
         </e>
         <e p="Startup.cs" t="Include" />
@@ -105,6 +119,7 @@
         <e p="IntDesign.Calculus.Core.csproj" t="IncludeRecursive" />
         <e p="models" t="Include">
           <e p="Enums" t="Include">
+            <e p="JobType.cs" t="Include" />
             <e p="MaterialType.cs" t="Include" />
             <e p="RoomObjectType.cs" t="Include" />
             <e p="RoomType.cs" t="Include" />
@@ -116,6 +131,7 @@
             <e p="filters" t="Include">
               <e p="HouseFilter.cs" t="Include" />
               <e p="RoomFilter.cs" t="Include" />
+              <e p="RoomWallObjectFilter.cs" t="Include" />
             </e>
             <e p="OrderedRequest.cs" t="Include" />
             <e p="PagedRequest.cs" t="Include" />

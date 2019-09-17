@@ -7,10 +7,10 @@ using Calculus.Context.extensions;
 using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.MainModels;
-using Calculus.Repositories.models;
+using Calculus.Repositories.model;
 using Microsoft.EntityFrameworkCore;
 
-namespace Calculus.Repositories.implementations
+namespace Calculus.Repositories.implementation
 {
     public class HouseRepository : IHouseRepository
     {

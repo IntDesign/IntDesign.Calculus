@@ -9,7 +9,7 @@ namespace Calculus.GraphQL.helpers
         public OrderedRequestType()
         {
             Field(x => x.OrderBy, true).Description("Name of the Property to sort by");
-            Field<OrderDirectionEnum>("orderDirection", resolve: c => c.Source.OrderDirection);
+            Field<OrderDirectionEnum>("orderDirection", resolve: _ => _.Source.OrderDirection);
         }
     }
 }

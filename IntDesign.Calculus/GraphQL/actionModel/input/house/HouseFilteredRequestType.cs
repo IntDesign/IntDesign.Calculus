@@ -1,7 +1,7 @@
 using Calculus.Core.Models.GraphQl.filters;
 using GraphQL.Types;
 
-namespace Calculus.GraphQL.actionModels.inputs.house
+namespace Calculus.GraphQL.actionModel.input.house
 {
     public class HouseFilteredRequestType : InputObjectGraphType<HouseFilter>
     {

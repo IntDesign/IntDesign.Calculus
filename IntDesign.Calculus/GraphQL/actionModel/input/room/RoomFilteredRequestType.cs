@@ -1,7 +1,7 @@
 using Calculus.Core.Models.GraphQl.filters;
 using GraphQL.Types;
 
-namespace Calculus.GraphQL.actionModels.inputs.room
+namespace Calculus.GraphQL.actionModel.input.room
 {
     public class RoomFilteredRequestType : InputObjectGraphType<RoomFilter>
     {

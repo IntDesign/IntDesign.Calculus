@@ -5,7 +5,7 @@ using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
 using Calculus.Core.Models.MainModels;
 
-namespace Calculus.Repositories.models
+namespace Calculus.Repositories.model
 {
     public interface IHouseRepository
     {
