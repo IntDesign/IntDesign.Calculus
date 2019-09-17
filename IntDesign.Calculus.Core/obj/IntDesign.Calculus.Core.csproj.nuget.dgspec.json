@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\RiderProjects\\Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {}
+    "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\RiderProjects\\Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
+    "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj",
         "projectName": "IntDesign.Calculus.Core",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\Calculus\\IntDesign.Calculus.Core\\obj\\",
+        "projectPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj",
+        "packagesPath": "C:\\Users\\Gagiu Filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gagiu Filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

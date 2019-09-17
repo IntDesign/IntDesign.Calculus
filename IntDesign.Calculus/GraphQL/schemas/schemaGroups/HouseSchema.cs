@@ -1,7 +1,6 @@
 using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.queries;
 using Calculus.GraphQL.schemas.models;
-using GraphQL.Types;
 
 namespace Calculus.GraphQL.schemas.schemaGroups
 {

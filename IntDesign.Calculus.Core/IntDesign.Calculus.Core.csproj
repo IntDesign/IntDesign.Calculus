@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <RootNamespace>Calculus.Core</RootNamespace>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -10,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GraphQL" Version="2.4.0"/>
+        <PackageReference Include="GraphQL" Version="2.4.0" />
     </ItemGroup>
 
 </Project>

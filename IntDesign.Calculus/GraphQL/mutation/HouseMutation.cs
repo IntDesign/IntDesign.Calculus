@@ -1,6 +1,5 @@
 using System;
 using Calculus.Core.Models.JobModels;
-using Calculus.GraphQL.actionModels.inputs;
 using Calculus.GraphQL.actionModels.inputs.house;
 using Calculus.GraphQL.actionModels.types;
 using Calculus.Repositories.models;

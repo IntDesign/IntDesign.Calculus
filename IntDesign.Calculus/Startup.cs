@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Calculus.Context;
+﻿using Calculus.Context;
 using Calculus.Core.Models.Tools;
-using Calculus.GraphQL.schemas;
 using Calculus.IoC;
 using GraphQL.Server;
 using GraphQL.Types;

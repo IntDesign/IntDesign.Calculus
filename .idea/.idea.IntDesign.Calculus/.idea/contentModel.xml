@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Gagiu Filip\.nuget\packages\nlog.schema\4.6.7\contentFiles\any\any\NLog.xsd" t="Include" />
+    <e p="C:\Users\Gagiu Filip\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Gagiu Filip\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_IntDesign.Calculus.-1109008889.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus" t="IncludeFlat">
+      <e p="IntDesign.Calculus" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="extensions" t="Include">
+            <e p="DataContextExtensions.cs" t="Include" />
+            <e p="OrderedQueryableExtension.cs" t="Include" />
+          </e>
+          <e p="MainContext.cs" t="Include" />
+        </e>
+        <e p="GraphQL" t="Include">
+          <e p="actionModels" t="Include">
+            <e p="inputs" t="Include">
+              <e p="house" t="Include">
+                <e p="HouseCreateViewModel.cs" t="Include" />
+                <e p="HouseFilteredRequestType.cs" t="Include" />
+              </e>
+            </e>
+            <e p="types" t="Include">
+              <e p="HouseQueryType.cs" t="Include" />
+            </e>
+          </e>
+          <e p="helpers" t="Include">
+            <e p="ListResponseType.cs" t="Include" />
+            <e p="OrderedRequestType.cs" t="Include" />
+            <e p="PagedRequestType.cs" t="Include" />
+          </e>
+          <e p="mutation" t="Include">
+            <e p="HouseMutation.cs" t="Include" />
+            <e p="RootMutation.cs" t="Include" />
+          </e>
+          <e p="queries" t="Include">
+            <e p="HouseQueries.cs" t="Include" />
+            <e p="RootQuery.cs" t="Include" />
+          </e>
+          <e p="schemas" t="Include">
+            <e p="models" t="Include">
+              <e p="ISchemaGroup.cs" t="Include" />
+            </e>
+            <e p="RootSchema.cs" t="Include" />
+            <e p="schemaGroups" t="Include">
+              <e p="HouseSchema.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="IntDesign.Calculus.csproj" t="IncludeRecursive" />
+        <e p="IoC" t="Include">
+          <e p="ServicesRegistry.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190829142138_BasicModelsAdded.cs" t="Include" />
+          <e p="20190829142138_BasicModelsAdded.Designer.cs" t="Include" />
+          <e p="20190829142359_BasicModelsAddedUpdatedNaming.cs" t="Include" />
+          <e p="20190829142359_BasicModelsAddedUpdatedNaming.Designer.cs" t="Include" />
+          <e p="20190829143423_BasicModelsAddedV2.cs" t="Include" />
+          <e p="20190829143423_BasicModelsAddedV2.Designer.cs" t="Include" />
+          <e p="20190902110235_UpdatedIdType.cs" t="Include" />
+          <e p="20190902110235_UpdatedIdType.Designer.cs" t="Include" />
+          <e p="MainContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="NLog.Development.config" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="IntDesign.Calculus.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="implementations" t="Include">
+            <e p="HouseRepository.cs" t="Include" />
+          </e>
+          <e p="models" t="Include">
+            <e p="IHouseRepository.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="IntDesign.Calculus.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IntDesign.Calculus.Core.csproj" t="IncludeRecursive" />
+        <e p="models" t="Include">
+          <e p="Enums" t="Include">
+            <e p="MaterialType.cs" t="Include" />
+            <e p="RoomObjectType.cs" t="Include" />
+            <e p="RoomType.cs" t="Include" />
+          </e>
+          <e p="GraphQL" t="Include">
+            <e p="Enums" t="Include">
+              <e p="EnumTypes.cs" t="Include" />
+            </e>
+            <e p="filters" t="Include">
+              <e p="HouseFiltering.cs" t="Include" />
+              <e p="ISearchTermFilter.cs" t="Include" />
+            </e>
+            <e p="OrderedRequest.cs" t="Include" />
+            <e p="PagedRequest.cs" t="Include" />
+          </e>
+          <e p="JobModels" t="Include">
+            <e p="House.cs" t="Include" />
+            <e p="Room.cs" t="Include" />
+            <e p="RoomJob.cs" t="Include" />
+            <e p="RoomWallObject.cs" t="Include" />
+          </e>
+          <e p="MaterialModels" t="Include">
+            <e p="Material.cs" t="Include" />
+            <e p="MaterialExpenditure.cs" t="Include" />
+            <e p="MaterialInformation.cs" t="Include" />
+            <e p="Provider.cs" t="Include" />
+          </e>
+          <e p="Tools" t="Include">
+            <e p="AppSettings.cs" t="Include" />
+            <e p="IIdentifier.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="IntDesign.Calculus.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="IntDesign.Calculus.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

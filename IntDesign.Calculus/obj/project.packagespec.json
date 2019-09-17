@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\user\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
+    "projectUniqueName": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
     "projectName": "IntDesign.Calculus",
-    "projectPath": "C:\\Users\\user\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
-    "outputPath": "C:\\Users\\user\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\obj\\",
+    "projectPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
+    "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -18,8 +18,8 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "C:\\Users\\user\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
-            "projectPath": "C:\\Users\\user\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj"
+          "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
+            "projectPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj"
           }
         }
       }
