@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190917163036_UpdateTableRelations")]
+    partial class UpdateTableRelations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,19 +44,11 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<float?>("Afm");
+                    b.Property<float>("Afm");
 
                     b.Property<float>("Asp");
 
                     b.Property<float>("Atv");
-
-                    b.Property<float?>("CustomHeightOne");
-
-                    b.Property<float?>("CustomHeightTwo");
-
-                    b.Property<float?>("CustomLenght");
-
-                    b.Property<float?>("CustomWidth");
 
                     b.Property<float>("EmptyAsp");
 
@@ -66,17 +60,11 @@ namespace Calculus.Migrations
 
                     b.Property<float>("Pc");
 
-                    b.Property<float?>("SpecialAfm");
-
-                    b.Property<float?>("SpecialTilesParquetCoefficient");
-
-                    b.Property<float?>("TilesParquetCoefficient");
+                    b.Property<float>("SpecialAfm");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("varchar(40)");
-
-                    b.Property<float?>("WallRealCoefficient");
 
                     b.Property<float>("Width");
 

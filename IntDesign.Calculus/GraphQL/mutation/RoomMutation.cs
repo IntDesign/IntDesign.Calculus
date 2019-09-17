@@ -1,3 +1,4 @@
+using System;
 using Calculus.Core.Models.MainModels;
 using Calculus.GraphQL.actionModel.input.room;
 using Calculus.GraphQL.actionModel.output;
@@ -23,6 +24,18 @@ namespace Calculus.GraphQL.mutation
                 }
             );
 
+            FieldAsync<RoomQueryType>(
+                "updateRoomValues",
+                arguments: new QueryArguments(new QueryArgument<NonNullGraphType<StringGraphType>>
+                {
+                    Name = "roomId"
+                }),
+                resolve: async context =>
+                {
+                    Guid.TryParse(context.GetArgument<string>("roomId"), out var id);
+                    return await context.TryAsyncResolve(async _ => await repository.UpdateRoomValues(id));
+                }
+            );
         }
     }
 }

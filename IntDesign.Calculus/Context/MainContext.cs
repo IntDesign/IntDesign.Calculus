@@ -72,8 +72,8 @@ namespace Calculus.Context
 
             modelBuilder.Entity<RoomJob>()
                 .HasOne(rj => rj.Room)
-                .WithOne(r => r.RoomJob)
-                .HasForeignKey<RoomJob>(rj => rj.RoomId);
+                .WithMany(r => r.RoomJobs)
+                .HasForeignKey(rj => rj.RoomId);
 
             modelBuilder.Entity<Provider>()
                 .HasOne(p => p.Material)

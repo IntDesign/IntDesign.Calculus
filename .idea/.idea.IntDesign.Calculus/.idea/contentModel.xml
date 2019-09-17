@@ -86,6 +86,10 @@
           <e p="20190917153408_UpdateEnumConversion.Designer.cs" t="Include" />
           <e p="20190917154408_UpdateEnumConversionTypeChange.cs" t="Include" />
           <e p="20190917154408_UpdateEnumConversionTypeChange.Designer.cs" t="Include" />
+          <e p="20190917163036_UpdateTableRelations.cs" t="Include" />
+          <e p="20190917163036_UpdateTableRelations.Designer.cs" t="Include" />
+          <e p="20190917191126_UpdateRoomModelToComplete.cs" t="Include" />
+          <e p="20190917191126_UpdateRoomModelToComplete.Designer.cs" t="Include" />
           <e p="MainContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="NLog.Development.config" t="Include" />

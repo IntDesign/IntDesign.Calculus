@@ -11,7 +11,7 @@ namespace Calculus.Migrations
                 name: "MaterialInformations");
 
             migrationBuilder.RenameColumn(
-                name: "Widtd",
+                name: "Width",
                 table: "Rooms",
                 newName: "Width");
 
@@ -77,7 +77,7 @@ namespace Calculus.Migrations
             migrationBuilder.RenameColumn(
                 name: "Width",
                 table: "Rooms",
-                newName: "Widtd");
+                newName: "Width");
 
             migrationBuilder.CreateTable(
                 name: "MaterialInformations",

@@ -35,14 +35,17 @@ namespace Calculus.Repositories.implementation
             return room;
         }
 
-        public async Task UpdateRoomValues(Guid roomId)
+        public async Task<Room> UpdateRoomValues(Guid roomId)
         {
             var room = await m_context.Rooms.Include(t => t.RoomObjects)
                 .Where(t => t.Id == roomId)
                 .FirstOrDefaultAsync();
-            room.EmptyAsp = room.Asp -  room.RoomObjects.Sum(roomObject => roomObject.Area);
+            
+            SetStandAloneValues(room);
+            SetNestedValues(room);
             m_context.Rooms.Update(room);
             await m_context.SaveChangesAsync();
+            return room;
         }
 
         public async Task<Tuple<int, List<Room>>> SearchAsync(RoomFilter filter, PagedRequest pagination,
@@ -60,6 +63,19 @@ namespace Calculus.Repositories.implementation
             room.Atv = room.Lenght * room.Width;
             room.Asp = (room.Lenght * room.Height + room.Width * room.Height) * 2;
             room.Pc = (room.Lenght + room.Width) * 2;
+            if (room.CustomHeightOne == null || room.CustomHeightTwo == null || room.CustomLenght == null ||
+                room.CustomWidth == null) return;
+            room.Afm = (room.CustomHeightOne * room.Lenght + room.CustomHeightTwo * room.Width) -
+                       (room.CustomHeightOne * room.CustomLenght + room.CustomHeightTwo * room.CustomWidth);
+            room.SpecialAfm = room.CustomHeightOne * room.CustomLenght + room.CustomHeightTwo * room.CustomWidth;
+        }
+
+        private static void SetNestedValues(Room room)
+        {
+            room.EmptyAsp = room.Asp - room.RoomObjects.Sum(roomObject => roomObject.Area);
+            room.WallRealCoefficient = room.EmptyAsp - room.Afm;
+            room.TilesParquetCoefficient = room.Atv - room.CustomLenght * room.CustomWidth;
+            room.SpecialTilesParquetCoefficient = room.CustomLenght * room.CustomWidth;
         }
     }
 }

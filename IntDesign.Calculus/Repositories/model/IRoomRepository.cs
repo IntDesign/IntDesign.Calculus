@@ -11,7 +11,7 @@ namespace Calculus.Repositories.model
     {
         Task<Room> AddRoom(Room room);
         Task<Room> RemoveRoom(Guid roomId);
-        Task UpdateRoomValues(Guid roomId);
+        Task<Room> UpdateRoomValues(Guid roomId);
         Task<Tuple<int, List<Room>>> SearchAsync(RoomFilter filter, PagedRequest pagination,
             OrderedRequest ordering);
     }
