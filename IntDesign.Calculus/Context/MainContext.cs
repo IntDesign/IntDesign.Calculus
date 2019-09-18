@@ -41,6 +41,7 @@ namespace Calculus.Context
             SetForeignKeys(modelBuilder);
             SetAllIndex(modelBuilder);
             SetEnumConversion(modelBuilder);
+            SetDefaultValues(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 
@@ -115,16 +116,18 @@ namespace Calculus.Context
                 e => e.ToString(),
                 p => (RoomObjectType) Enum.Parse(typeof(RoomObjectType), p)
             ).HasColumnType("varchar(40)");
-
-            modelBuilder.Entity<Material>().Property(t => t.Type).HasConversion(
-                e => e.ToString(),
-                p => (MaterialType) Enum.Parse(typeof(MaterialType), p)
-            ).HasColumnType("varchar(40)");
-
+            
             modelBuilder.Entity<RoomJob>().Property(t => t.Type).HasConversion(
                 e => e.ToString(),
-                p => (JobType) Enum.Parse(typeof(JobType), p)
+                p => (JobRequestType) Enum.Parse(typeof(JobRequestType), p)
             ).HasColumnType("varchar(40)");
+        }
+
+        private static void SetDefaultValues(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<RoomWallObject>()
+                .Property(t => t.Number)
+                .HasDefaultValue(1);
         }
     }
 }

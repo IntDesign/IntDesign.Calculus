@@ -28,7 +28,7 @@ namespace Calculus.Migrations
                 {
                     RoomId = table.Column<Guid>(nullable: false),
                     Lenght = table.Column<float>(nullable: false),
-                    Widtd = table.Column<float>(nullable: false),
+                    Width = table.Column<float>(nullable: false),
                     Height = table.Column<float>(nullable: false),
                     Asp = table.Column<float>(nullable: false),
                     EmptyAsp = table.Column<float>(nullable: false),

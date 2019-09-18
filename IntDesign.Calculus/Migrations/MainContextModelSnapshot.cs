@@ -42,43 +42,43 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<float?>("Afm");
+                    b.Property<double?>("Afm");
 
-                    b.Property<float>("Asp");
+                    b.Property<double>("Asp");
 
-                    b.Property<float>("Atv");
+                    b.Property<double>("Atv");
 
-                    b.Property<float?>("CustomHeightOne");
+                    b.Property<double?>("CustomHeightOne");
 
-                    b.Property<float?>("CustomHeightTwo");
+                    b.Property<double?>("CustomHeightTwo");
 
-                    b.Property<float?>("CustomLenght");
+                    b.Property<double?>("CustomLenght");
 
-                    b.Property<float?>("CustomWidth");
+                    b.Property<double?>("CustomWidth");
 
-                    b.Property<float>("EmptyAsp");
+                    b.Property<double>("EmptyAsp");
 
-                    b.Property<float>("Height");
+                    b.Property<double>("Height");
 
                     b.Property<Guid>("HouseId");
 
-                    b.Property<float>("Lenght");
+                    b.Property<double>("Lenght");
 
-                    b.Property<float>("Pc");
+                    b.Property<double>("Pc");
 
-                    b.Property<float?>("SpecialAfm");
+                    b.Property<double?>("SpecialAfm");
 
-                    b.Property<float?>("SpecialTilesParquetCoefficient");
+                    b.Property<double?>("SpecialTilesParquetCoefficient");
 
-                    b.Property<float?>("TilesParquetCoefficient");
+                    b.Property<double?>("TilesParquetCoefficient");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("varchar(40)");
 
-                    b.Property<float?>("WallRealCoefficient");
+                    b.Property<double?>("WallRealCoefficient");
 
-                    b.Property<float>("Width");
+                    b.Property<double>("Width");
 
                     b.HasKey("Id");
 
@@ -118,9 +118,13 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<float>("Area");
+                    b.Property<double>("Area");
 
-                    b.Property<float>("Lenght");
+                    b.Property<double>("Lenght");
+
+                    b.Property<int>("Number")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue(1);
 
                     b.Property<Guid>("RoomId");
 
@@ -128,7 +132,7 @@ namespace Calculus.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(40)");
 
-                    b.Property<float>("Width");
+                    b.Property<double>("Width");
 
                     b.HasKey("Id");
 
@@ -146,13 +150,7 @@ namespace Calculus.Migrations
 
                     b.Property<string>("MaterialName");
 
-                    b.Property<float>("PricePerPacket");
-
                     b.Property<Guid?>("RoomJobId");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(40)");
 
                     b.HasKey("Id");
 
@@ -169,6 +167,8 @@ namespace Calculus.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<Guid>("MaterialId");
+
+                    b.Property<float>("PricePerPacket");
 
                     b.Property<float>("TotalKilograms");
 

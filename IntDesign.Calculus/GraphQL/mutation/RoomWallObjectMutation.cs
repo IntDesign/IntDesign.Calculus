@@ -12,14 +12,14 @@ namespace Calculus.GraphQL.mutation
         public RoomWallObjectMutation(IRoomWallObjectRepository repository, IRoomRepository roomRepository)
         {
             FieldAsync<RoomWallObjectQueryType>(
-                "addRoom",
+                "addWallObject",
                 arguments: new QueryArguments(new QueryArgument<NonNullGraphType<RoomWallObjectCreateViewModel>>
                 {
-                    Name = "WallObject"
+                    Name = "wallObject"
                 }),
                 resolve: async context =>
                 {
-                    var wallObject = context.GetArgument<RoomWallObject>("WallObject");
+                    var wallObject = context.GetArgument<RoomWallObject>("wallObject");
                     return await context.TryAsyncResolve(async _ => await repository.AddWallObject(wallObject));
                 }
             );

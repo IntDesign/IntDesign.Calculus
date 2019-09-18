@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Calculus.Core.Models.GraphQl;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace Calculus.Context.extensions

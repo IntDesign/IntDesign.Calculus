@@ -10,14 +10,14 @@ namespace Calculus.GraphQL.schemas.schemaGroups
         {
             query.Field<RoomQueries>(
                 "room",
-                resolve: context => new { });
+                resolve: _ => new { });
         }
 
         public void SetGroup(RootMutation mutation)
         {
             mutation.Field<RoomMutation>(
                 "room",
-                resolve: context => new { });
+                resolve: _ => new { });
         }
     }
 }

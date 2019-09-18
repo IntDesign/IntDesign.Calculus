@@ -28,4 +28,12 @@ namespace Calculus.GraphQL.helpers
     public class ListRoomQueryModelType : ListResponseType<RoomQueryType>
     {
     }
+    
+    public class ListRoomWallObjectQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    {
+    }
+    
+    public class ListRoomJobQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    {
+    }
 }

@@ -1,6 +1,6 @@
 using System;
-using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using Calculus.Core.Models.MainModels;
 using Calculus.GraphQL.actionModel.input.house;
 using Calculus.GraphQL.helpers;
@@ -11,7 +11,7 @@ namespace Calculus.GraphQL.queries
 {
     public class HouseQueries : ObjectGraphType
     {
-        public HouseQueries(IHouseRepository houseRepository)
+        public HouseQueries(IHouseRepository repository)
         {
             FieldAsync<ListHouseQueryModelType>(
                 "search",
@@ -25,7 +25,7 @@ namespace Calculus.GraphQL.queries
                     var filtering = context.GetArgument<HouseFilter>("filter");
                     var pagination = context.GetArgument<PagedRequest>("pagination");
                     var ordering = context.GetArgument<OrderedRequest>("ordering");
-                    var (count, houses) = await houseRepository.SearchAsync(filtering, pagination, ordering);
+                    var (count, houses) = await repository.SearchAsync(filtering, pagination, ordering);
                     return new ListResult<House>
                     {
                         TotalCount = count,

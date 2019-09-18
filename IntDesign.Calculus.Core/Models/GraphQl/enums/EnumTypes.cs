@@ -1,16 +1,9 @@
 using Calculus.Core.Models.Enums;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using GraphQL.Types;
 
 namespace Calculus.Core.Models.GraphQl.enums
 {
-    public class MaterialTypeEnum : EnumerationGraphType<MaterialType>
-    {
-        public MaterialTypeEnum()
-        {
-            Description = "Material Type";
-        }
-    }
-
     public class OrderDirectionEnum : EnumerationGraphType<OrderDirection>
     {
         public OrderDirectionEnum()
@@ -35,9 +28,9 @@ namespace Calculus.Core.Models.GraphQl.enums
         }
     }
     
-    public class JobTypeEnum : EnumerationGraphType<JobType>
+    public class JobRequestTypeEnum : EnumerationGraphType<JobRequestType>
     {
-        public JobTypeEnum()
+        public JobRequestTypeEnum()
         {
             Description = "RoomJob Type";
         }

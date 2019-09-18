@@ -19,7 +19,7 @@ namespace Calculus.GraphQL.mutation
                 }),
                 resolve: async context =>
                 {
-                    var room = context.GetArgument<Room>("Room");
+                    var room = context.GetArgument<Room>("room");
                     return await context.TryAsyncResolve(async _ => await repository.AddRoom(room));
                 }
             );

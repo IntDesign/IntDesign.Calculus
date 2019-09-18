@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Calculus.Context;
 using Calculus.Context.extensions;
-using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using Calculus.Core.Models.MainModels;
 using Calculus.Repositories.model;
 using Microsoft.EntityFrameworkCore;
@@ -40,7 +40,7 @@ namespace Calculus.Repositories.implementation
             var room = await m_context.Rooms.Include(t => t.RoomObjects)
                 .Where(t => t.Id == roomId)
                 .FirstOrDefaultAsync();
-            
+
             SetStandAloneValues(room);
             SetNestedValues(room);
             m_context.Rooms.Update(room);
@@ -72,10 +72,21 @@ namespace Calculus.Repositories.implementation
 
         private static void SetNestedValues(Room room)
         {
-            room.EmptyAsp = room.Asp - room.RoomObjects.Sum(roomObject => roomObject.Area);
-            room.WallRealCoefficient = room.EmptyAsp - room.Afm;
-            room.TilesParquetCoefficient = room.Atv - room.CustomLenght * room.CustomWidth;
-            room.SpecialTilesParquetCoefficient = room.CustomLenght * room.CustomWidth;
+            room.EmptyAsp = room.Asp - room.RoomObjects.Sum(roomObject => roomObject.Area * roomObject.Number);
+            if (room.Afm == null)
+                room.WallRealCoefficient = room.EmptyAsp;
+            else room.WallRealCoefficient = room.EmptyAsp - room.Afm;
+
+            if (room.CustomLenght == null || room.CustomWidth == null)
+            {
+                room.TilesParquetCoefficient = room.Atv;
+                room.SpecialTilesParquetCoefficient = 0;
+            }
+            else
+            {
+                room.TilesParquetCoefficient = room.Atv - room.CustomLenght * room.CustomWidth;
+                room.SpecialTilesParquetCoefficient = room.CustomLenght * room.CustomWidth;
+            }
         }
     }
 }

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Calculus.Context;
 using Calculus.Context.extensions;
-using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using Calculus.Core.Models.MainModels;
 using Calculus.Repositories.model;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +15,6 @@ namespace Calculus.Repositories.implementation
     public class RoomWallObjectRepository : IRoomWallObjectRepository
     {
         private readonly MainContext m_context;
-
         public RoomWallObjectRepository(MainContext mainContext) => m_context = mainContext;
 
         public async Task<RoomWallObject> AddWallObject(RoomWallObject wallObject)
@@ -35,8 +34,8 @@ namespace Calculus.Repositories.implementation
             return wallObject;
         }
 
-        public async Task<Tuple<int, List<RoomWallObject>>> SearchAsync(RoomWallObjectFilter filter, PagedRequest pagination,
-            OrderedRequest ordering) =>
+        public async Task<Tuple<int, List<RoomWallObject>>> SearchAsync(RoomWallObjectFilter filter,
+            PagedRequest pagination, OrderedRequest ordering) =>
             await filter.Filter(m_context.RoomWallObjects.AsQueryable())
                 .WithOrdering(ordering, new OrderedRequest
                 {

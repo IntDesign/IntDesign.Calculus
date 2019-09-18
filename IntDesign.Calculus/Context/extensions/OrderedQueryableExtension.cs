@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Calculus.Core.Models.GraphQl;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 
 namespace Calculus.Context.extensions
 {

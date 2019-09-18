@@ -1,6 +1,6 @@
 using System;
-using Calculus.Core.Models.GraphQl;
 using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.Models.GraphQl.requestHelpers;
 using Calculus.Core.Models.MainModels;
 using Calculus.GraphQL.actionModel.input.room;
 using Calculus.GraphQL.helpers;
@@ -11,7 +11,7 @@ namespace Calculus.GraphQL.queries
 {
     public class RoomQueries : ObjectGraphType
     {
-        public RoomQueries(IRoomRepository roomRepository)
+        public RoomQueries(IRoomRepository repository)
         {
             FieldAsync<ListRoomQueryModelType>(
                 "search",
@@ -25,7 +25,7 @@ namespace Calculus.GraphQL.queries
                     var filtering = context.GetArgument<RoomFilter>("filter");
                     var pagination = context.GetArgument<PagedRequest>("pagination");
                     var ordering = context.GetArgument<OrderedRequest>("ordering");
-                    var (count, rooms) = await roomRepository.SearchAsync(filtering, pagination, ordering);
+                    var (count, rooms) = await repository.SearchAsync(filtering, pagination, ordering);
                     return new ListResult<Room>
                     {
                         TotalCount = count,

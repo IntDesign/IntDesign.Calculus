@@ -14,13 +14,13 @@ namespace Calculus.GraphQL.actionModel.input.room
                 .Description("The Room Height");
             Field(t => t.Width, false, typeof(NonNullGraphType<FloatGraphType>))
                 .Description("The Room Width");
-            Field(t => t.CustomLenght, true, typeof(NonNullGraphType<FloatGraphType>))
+            Field(t => t.CustomLenght, true, typeof(FloatGraphType))
                 .Description("The Room Custom Lenght (LDat)");
-            Field(t => t.CustomWidth, true, typeof(NonNullGraphType<FloatGraphType>))
+            Field(t => t.CustomWidth, true, typeof(FloatGraphType))
                 .Description("The Room Custom Width (ldat)");
-            Field(t => t.CustomHeightOne, true, typeof(NonNullGraphType<FloatGraphType>))
+            Field(t => t.CustomHeightOne, true, typeof(FloatGraphType))
                 .Description("The Room Custom Height 1 (d1)");
-            Field(t => t.CustomHeightTwo, true, typeof(NonNullGraphType<FloatGraphType>))
+            Field(t => t.CustomHeightTwo, true, typeof(FloatGraphType))
                 .Description("The Room Custom Height 2 (d1)");
             Field(t => t.Type, false, typeof(NonNullGraphType<RoomTypeEnum>));
             Field(t => t.HouseId, false, typeof(NonNullGraphType<StringGraphType>))

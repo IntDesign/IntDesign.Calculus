@@ -6,6 +6,11 @@ namespace Calculus.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_RoomJobs_Rooms_RoomId",
+                table: "RoomJobs"
+            );
+
             migrationBuilder.DropIndex(
                 name: "IX_RoomJobs_RoomId",
                 table: "RoomJobs");
@@ -14,7 +19,7 @@ namespace Calculus.Migrations
                 name: "IX_RoomJobs_RoomId",
                 table: "RoomJobs",
                 column: "RoomId");
-            
+
             migrationBuilder.AddForeignKey(
                 name: "FK_RoomJobs_Rooms_RoomId",
                 table: "RoomJobs",
@@ -22,7 +27,6 @@ namespace Calculus.Migrations
                 principalTable: "Rooms",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
-            
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

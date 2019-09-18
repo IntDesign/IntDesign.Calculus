@@ -10,6 +10,7 @@ namespace Calculus.Core.Models.SecondaryModels
         public float TotalPrice { get; set; }
         public float TotalKilograms { get; set; }
         public float TotalPackets { get; set; }
+        public float PricePerPacket { get; set; }
         public Material Material { get; set; }
     }
 }
