@@ -1,4 +1,3 @@
-using Calculus.Core.Models.SecondaryModels;
 using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.queries;
 using Calculus.GraphQL.schemas.models;

@@ -16,10 +16,7 @@ namespace Calculus.Repositories.implementation
     {
         private readonly MainContext m_context;
 
-        public MaterialInformationRepository(MainContext context)
-        {
-            m_context = context;
-        }
+        public MaterialInformationRepository(MainContext context) => m_context = context;
 
         public async Task<MaterialInformation> AddMaterialInfo(MaterialInformation materialnfo)
         {

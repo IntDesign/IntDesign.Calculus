@@ -27,6 +27,10 @@
                 <e p="MaterialCreateViewModel.cs" t="Include" />
                 <e p="MaterialFilterRequestType.cs" t="Include" />
               </e>
+              <e p="materialExpenditure" t="Include">
+                <e p="MaterialExpenditureCreateViewModel.cs" t="Include" />
+                <e p="MaterialExpenditureFilterRequestType.cs" t="Include" />
+              </e>
               <e p="materialInformation" t="Include">
                 <e p="MaterialInformationCreateViewModel.cs" t="Include" />
                 <e p="MaterialInformationFilterRequestType.cs" t="Include" />
@@ -46,6 +50,7 @@
             </e>
             <e p="output" t="Include">
               <e p="HouseQueryType.cs" t="Include" />
+              <e p="MaterialExpenditureQueryType.cs" t="Include" />
               <e p="MaterialInformationQueryType.cs" t="Include" />
               <e p="MaterialQueryType.cs" t="Include" />
               <e p="RoomJobQueryType.cs" t="Include" />
@@ -60,6 +65,7 @@
           </e>
           <e p="mutation" t="Include">
             <e p="HouseMutation.cs" t="Include" />
+            <e p="MaterialExpenditureMutation.cs" t="Include" />
             <e p="MaterialInformationMutation.cs" t="Include" />
             <e p="MaterialMutation.cs" t="Include" />
             <e p="RoomJobMutation.cs" t="Include" />
@@ -69,6 +75,7 @@
           </e>
           <e p="queries" t="Include">
             <e p="HouseQueries.cs" t="Include" />
+            <e p="MaterialExpenditureQueries.cs" t="Include" />
             <e p="MaterialInformationQuery.cs" t="Include" />
             <e p="MaterialQuery.cs" t="Include" />
             <e p="RoomJobQueries.cs" t="Include" />
@@ -83,6 +90,7 @@
             <e p="RootSchema.cs" t="Include" />
             <e p="schemaGroups" t="Include">
               <e p="HouseSchema.cs" t="Include" />
+              <e p="MaterialExpenditureSchema.cs" t="Include" />
               <e p="MaterialInformationSchema.cs" t="Include" />
               <e p="MaterialSchema.cs" t="Include" />
               <e p="RoomJobSchema.cs" t="Include" />
@@ -145,6 +153,7 @@
         <e p="Repositories" t="Include">
           <e p="implementation" t="Include">
             <e p="HouseRepository.cs" t="Include" />
+            <e p="MaterialExpenditureRepository.cs" t="Include" />
             <e p="MaterialInformationRepository.cs" t="Include" />
             <e p="MaterialRepository.cs" t="Include" />
             <e p="RoomJobRepository.cs" t="Include" />
@@ -153,6 +162,7 @@
           </e>
           <e p="model" t="Include">
             <e p="IHouseRepository.cs" t="Include" />
+            <e p="IMaterialExpenditureRepository.cs" t="Include" />
             <e p="IMaterialInformationRepository.cs" t="Include" />
             <e p="IMaterialRepository.cs" t="Include" />
             <e p="IRoomJobRepository.cs" t="Include" />
@@ -177,6 +187,7 @@
             </e>
             <e p="filters" t="Include">
               <e p="HouseFilter.cs" t="Include" />
+              <e p="MaterialExpenditureFilter.cs" t="Include" />
               <e p="MaterialFilter.cs" t="Include" />
               <e p="MaterialInformationFilter.cs" t="Include" />
               <e p="RoomFilter.cs" t="Include" />

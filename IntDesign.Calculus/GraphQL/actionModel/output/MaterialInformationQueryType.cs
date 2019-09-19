@@ -13,13 +13,13 @@ namespace Calculus.GraphQL.actionModel.output
                 .Description("Material Information Provider Id");
             Field(t => t.MaterialId, false, typeof(StringGraphType))
                 .Description("Material Information Material Id");
-            Field(t => t.ConsumptionX, false, typeof(StringGraphType))
+            Field(t => t.ConsumptionX, false, typeof(FloatGraphType))
                 .Description("Material Information Consumption X");
-            Field(t => t.ConsumptionZ, false, typeof(StringGraphType))
+            Field(t => t.ConsumptionZ, false, typeof(FloatGraphType))
                 .Description("Material Information Consumption Z");
-            Field(t => t.AppliedLayers, false, typeof(StringGraphType))
+            Field(t => t.AppliedLayers, false, typeof(FloatGraphType))
                 .Description("Material Information Applied Layers");
-            Field(t => t.UnitCover, false, typeof(StringGraphType))
+            Field(t => t.UnitCover, false, typeof(FloatGraphType))
                 .Description("Material Information Unit Cover");
         }
     }

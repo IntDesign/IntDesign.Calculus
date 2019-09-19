@@ -25,11 +25,11 @@ namespace Calculus.GraphQL.queries
                     var filtering = context.GetArgument<RoomJobFilter>("filter");
                     var pagination = context.GetArgument<PagedRequest>("pagination");
                     var ordering = context.GetArgument<OrderedRequest>("ordering");
-                    var (count, rooms) = await repository.SearchAsync(filtering, pagination, ordering);
+                    var (count, roomsJobs) = await repository.SearchAsync(filtering, pagination, ordering);
                     return new ListResult<RoomJob>
                     {
                         TotalCount = count,
-                        Items = rooms
+                        Items = roomsJobs
                     };
                 }
             );

@@ -44,4 +44,8 @@ namespace Calculus.GraphQL.helpers
     public class ListMaterialInformationQueryModelType : ListResponseType<RoomWallObjectQueryType>
     {
     }
+    
+    public class ListMaterialExpenditureQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    {
+    }
 }

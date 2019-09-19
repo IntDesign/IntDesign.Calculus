@@ -25,11 +25,11 @@ namespace Calculus.GraphQL.queries
                     var filtering = context.GetArgument<MaterialFilter>("filter");
                     var pagination = context.GetArgument<PagedRequest>("pagination");
                     var ordering = context.GetArgument<OrderedRequest>("ordering");
-                    var (count, houses) = await repository.SearchAsync(filtering, pagination, ordering);
+                    var (count, materials) = await repository.SearchAsync(filtering, pagination, ordering);
                     return new ListResult<Material>
                     {
                         TotalCount = count,
-                        Items = houses
+                        Items = materials
                     };
                 }
             );
