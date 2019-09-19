@@ -20,7 +20,11 @@ namespace Calculus.GraphQL.actionModel.output
             Field(t => t.AppliedLayers, false, typeof(FloatGraphType))
                 .Description("Material Information Applied Layers");
             Field(t => t.UnitCover, false, typeof(FloatGraphType))
-                .Description("Material Information Unit Cover");
+                .Description("Material Information Unit Cover -> n");
+            Field(t => t.PricePerUnit, false, typeof(FloatGraphType))
+                .Description("Price for an unit");
+            Field(t => t.ProductQuantity, false, typeof(FloatGraphType))
+                .Description("Product Quantity");
         }
     }
 }

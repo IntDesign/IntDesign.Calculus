@@ -21,6 +21,7 @@ namespace Calculus.Repositories.implementation
         public async Task<MaterialInformation> AddMaterialInfo(MaterialInformation materialnfo)
         {
             materialnfo.Id = Guid.NewGuid();
+            materialnfo.UnitCover = materialnfo.ConsumptionZ * materialnfo.ProductQuantity / materialnfo.ConsumptionX;
             await m_context.MaterialInformation.AddAsync(materialnfo);
             await m_context.SaveChangesAsync();
             return materialnfo;

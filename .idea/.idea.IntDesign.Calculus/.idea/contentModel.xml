@@ -136,6 +136,10 @@
           <e p="20190918161824_UpdatedProviderModel.Designer.cs" t="Include" />
           <e p="20190919122408_UpdateMaterialInformationModel.cs" t="Include" />
           <e p="20190919122408_UpdateMaterialInformationModel.Designer.cs" t="Include" />
+          <e p="20190919181618_UpdatedMaterialExpenditureModel.cs" t="Include" />
+          <e p="20190919181618_UpdatedMaterialExpenditureModel.Designer.cs" t="Include" />
+          <e p="20190919193249_FixedMaterialFields.cs" t="Include" />
+          <e p="20190919193249_FixedMaterialFields.Designer.cs" t="Include" />
           <e p="MainContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="NLog.Development.config" t="Include" />

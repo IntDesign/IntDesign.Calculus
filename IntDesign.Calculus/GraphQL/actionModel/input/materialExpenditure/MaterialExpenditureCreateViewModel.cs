@@ -7,8 +7,8 @@ namespace Calculus.GraphQL.actionModel.input.materialExpenditure
     {
         public MaterialExpenditureCreateViewModel()
         {
-            Field(t => t.MaterialId, false, typeof(NonNullGraphType<StringGraphType>))
-                .Description("Material Expenditure Material Id");
+            Field(t => t.MaterialInformationId, false, typeof(NonNullGraphType<StringGraphType>))
+                .Description("Material Expenditure Material Information Id");
         }
     }
 }

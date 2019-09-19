@@ -12819,7 +12819,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Gagiu Filip\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12832,7 +12832,7 @@
       "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet",
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [

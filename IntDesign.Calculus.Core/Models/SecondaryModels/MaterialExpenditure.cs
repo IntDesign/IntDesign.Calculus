@@ -6,11 +6,10 @@ namespace Calculus.Core.Models.SecondaryModels
     public class MaterialExpenditure : IIdentifier
     {
         public Guid Id { get; set; }
-        public Guid MaterialId { get; set; }
-        public float TotalPrice { get; set; }
-        public float TotalKilograms { get; set; }
-        public float TotalPackets { get; set; }
-        public float PricePerPacket { get; set; }
-        public Material Material { get; set; }
+        public Guid MaterialInformationId { get; set; }
+        public double? TotalPrice { get; set; }
+        public double? TotalQuantity { get; set; }
+        public double? TotalPackets { get; set; }
+        public MaterialInformation MaterialInformation { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Calculus.Repositories.model
         Task<MaterialExpenditure> AddMaterialExpenditure(MaterialExpenditure expenditure);
         
         Task<MaterialExpenditure> UpdateMaterialExpenditureValues(Guid id);
-        Task<MaterialExpenditure> RemoveHouse(Guid id);
+        Task<MaterialExpenditure> RemoveMaterialExpenditure(Guid id);
 
         Task<Tuple<int, List<MaterialExpenditure>>> SearchAsync(MaterialExpenditureFilter filter, PagedRequest pagination,
             OrderedRequest ordering);

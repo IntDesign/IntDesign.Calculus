@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190919181618_UpdatedMaterialExpenditureModel")]
+    partial class UpdatedMaterialExpenditureModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,11 +170,13 @@ namespace Calculus.Migrations
 
                     b.Property<Guid>("MaterialInformationId");
 
-                    b.Property<double?>("TotalPackets");
+                    b.Property<float>("PricePerPacket");
 
-                    b.Property<double?>("TotalPrice");
+                    b.Property<float>("TotalKilograms");
 
-                    b.Property<double?>("TotalQuantity");
+                    b.Property<float>("TotalPackets");
+
+                    b.Property<float>("TotalPrice");
 
                     b.HasKey("Id");
 
@@ -189,21 +193,19 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<double?>("AppliedLayers");
+                    b.Property<double>("AppliedLayers");
 
-                    b.Property<double?>("ConsumptionX");
+                    b.Property<double>("ConsumptionX");
 
-                    b.Property<double?>("ConsumptionZ");
+                    b.Property<double>("ConsumptionZ");
 
                     b.Property<Guid>("MaterialId");
 
-                    b.Property<double?>("PricePerUnit");
+                    b.Property<double>("ProductQuantity");
 
-                    b.Property<double?>("ProductQuantity");
+                    b.Property<Guid>("ProviderId");
 
-                    b.Property<Guid?>("ProviderId");
-
-                    b.Property<double?>("UnitCover");
+                    b.Property<double>("UnitCover");
 
                     b.HasKey("Id");
 
@@ -286,7 +288,8 @@ namespace Calculus.Migrations
 
                     b.HasOne("Calculus.Core.Models.SecondaryModels.Provider", "Provider")
                         .WithMany("MaterialInformations")
-                        .HasForeignKey("ProviderId");
+                        .HasForeignKey("ProviderId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

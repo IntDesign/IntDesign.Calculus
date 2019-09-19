@@ -56,45 +56,50 @@ namespace Calculus.Context
             modelBuilder.Entity<MaterialExpenditure>().HasKey(me => me.Id);
             modelBuilder.Entity<MaterialInformation>().HasKey(mi => mi.Id);
             modelBuilder.Entity<Provider>().HasIndex(p => p.Id);
+            
         }
 
         private static void SetForeignKeys(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Room>()
-                .HasOne(r => r.House)
-                .WithMany(h => h.HouseRooms)
-                .HasForeignKey(r => r.HouseId);
+                .HasOne(t => t.House)
+                .WithMany(t => t.HouseRooms)
+                .HasForeignKey(t => t.HouseId);
 
             modelBuilder.Entity<RoomWallObject>()
                 .HasOne(rw => rw.Room)
-                .WithMany(r => r.RoomObjects)
-                .HasForeignKey(rw => rw.RoomId);
-            modelBuilder.Entity<RoomJob>().HasKey(rj => rj.Id);
+                .WithMany(t => t.RoomObjects)
+                .HasForeignKey(t => t.RoomId);
 
             modelBuilder.Entity<RoomJob>()
-                .HasOne(rj => rj.Room)
-                .WithMany(r => r.RoomJobs)
-                .HasForeignKey(rj => rj.RoomId);
+                .HasOne(t => t.Room)
+                .WithMany(t => t.RoomJobs)
+                .HasForeignKey(t => t.RoomId);
             
             modelBuilder.Entity<Material>()
                 .HasOne(t => t.RoomJob)
                 .WithMany(t => t.Materials)
                 .HasForeignKey(t => t.RoomJobId);
             
+            modelBuilder.Entity<MaterialInformation>()
+                .HasOne(t => t.Material)
+                .WithOne(t => t.MaterialInformation)
+                .HasForeignKey<MaterialInformation>(t => t.MaterialId);
+            
             modelBuilder.Entity<MaterialExpenditure>()
-                .HasOne(me => me.Material)
-                .WithOne(m => m.MaterialExpenditure)
-                .HasForeignKey<MaterialExpenditure>(me => me.MaterialId);
-
+                .HasOne(t => t.MaterialInformation)
+                .WithOne(t => t.MaterialExpenditure)
+                .HasForeignKey<MaterialExpenditure>(t => t.MaterialInformationId);
+            
             modelBuilder.Entity<MaterialInformation>()
-                .HasOne(mi => mi.Material)
-                .WithOne(m => m.MaterialInformation)
-                .HasForeignKey<MaterialInformation>(mi => mi.MaterialId);
-
+                .HasOne(t => t.Material)
+                .WithOne(t => t.MaterialInformation)
+                .HasForeignKey<MaterialInformation>(t => t.MaterialId);
+            
             modelBuilder.Entity<MaterialInformation>()
-                .HasOne(mi => mi.Provider)
+                .HasOne(t => t.Provider)
                 .WithMany(t => t.MaterialInformations)
-                .HasForeignKey(mi => mi.ProviderId);
+                .HasForeignKey(t => t.ProviderId);
         }
 
         private static void SetAllIndex(ModelBuilder modelBuilder)

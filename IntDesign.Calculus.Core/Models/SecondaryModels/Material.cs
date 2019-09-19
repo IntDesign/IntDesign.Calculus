@@ -11,6 +11,5 @@ namespace Calculus.Core.Models.SecondaryModels
         public Guid RoomJobId { get; set; }
         public RoomJob RoomJob { get; set; }
         public MaterialInformation MaterialInformation { get; set; } = null;
-        public MaterialExpenditure MaterialExpenditure { get; set; } = null;
     }
 }

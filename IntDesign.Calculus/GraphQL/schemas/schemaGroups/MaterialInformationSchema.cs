@@ -16,7 +16,7 @@ namespace Calculus.GraphQL.schemas.schemaGroups
 
         public void SetGroup(RootMutation mutation)
         {
-            mutation.Field<MaterialInformationQuery>(
+            mutation.Field<MaterialInformationMutation>(
                 "materialInfo",
                 resolve: _ => new { }
             );
