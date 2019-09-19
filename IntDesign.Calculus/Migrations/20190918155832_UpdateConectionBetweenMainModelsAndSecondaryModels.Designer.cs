@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190918155832_UpdateConectionBetweenMainModelsAndSecondaryModels")]
+    partial class UpdateConectionBetweenMainModelsAndSecondaryModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,17 +193,15 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<double>("AppliedLayers");
+                    b.Property<float>("AppliedLayers");
 
-                    b.Property<double>("ConsumptionX");
+                    b.Property<float>("ComsumptionZ");
 
-                    b.Property<double>("ConsumptionZ");
+                    b.Property<float>("ConsumptionX");
 
                     b.Property<Guid>("MaterialId");
 
-                    b.Property<Guid>("ProviderId");
-
-                    b.Property<double>("UnitCover");
+                    b.Property<float>("UnitCover");
 
                     b.HasKey("Id");
 
@@ -210,8 +210,6 @@ namespace Calculus.Migrations
                     b.HasIndex("MaterialId")
                         .IsUnique();
 
-                    b.HasIndex("ProviderId");
-
                     b.ToTable("MaterialInformation");
                 });
 
@@ -219,6 +217,8 @@ namespace Calculus.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<Guid>("MaterialId");
 
                     b.Property<string>("ProviderAddress");
 
@@ -231,6 +231,9 @@ namespace Calculus.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Id");
+
+                    b.HasIndex("MaterialId")
+                        .IsUnique();
 
                     b.ToTable("Providers");
                 });
@@ -281,10 +284,13 @@ namespace Calculus.Migrations
                         .WithOne("MaterialInformation")
                         .HasForeignKey("Calculus.Core.Models.SecondaryModels.MaterialInformation", "MaterialId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
 
-                    b.HasOne("Calculus.Core.Models.SecondaryModels.Provider", "Provider")
-                        .WithMany("MaterialInformations")
-                        .HasForeignKey("ProviderId")
+            modelBuilder.Entity("Calculus.Core.Models.SecondaryModels.Provider", b =>
+                {
+                    b.HasOne("Calculus.Core.Models.SecondaryModels.Material", "Material")
+                        .WithOne("Provider")
+                        .HasForeignKey("Calculus.Core.Models.SecondaryModels.Provider", "MaterialId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

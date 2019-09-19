@@ -3,14 +3,16 @@ using System;
 using Calculus.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculus.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20190918161824_UpdatedProviderModel")]
+    partial class UpdatedProviderModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,17 +193,17 @@ namespace Calculus.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<double>("AppliedLayers");
+                    b.Property<float>("AppliedLayers");
 
-                    b.Property<double>("ConsumptionX");
+                    b.Property<float>("ConsumptionX");
 
-                    b.Property<double>("ConsumptionZ");
+                    b.Property<float>("ConsumptionZ");
 
                     b.Property<Guid>("MaterialId");
 
                     b.Property<Guid>("ProviderId");
 
-                    b.Property<double>("UnitCover");
+                    b.Property<float>("UnitCover");
 
                     b.HasKey("Id");
 

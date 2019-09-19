@@ -7,10 +7,12 @@ namespace Calculus.Core.Models.SecondaryModels
     {
         public Guid Id { get; set; }
         public Guid MaterialId { get; set; }
-        public float AppliedLayers { get; set; }
-        public float ConsumptionX { get; set; }
-        public float ComsumptionZ { get; set; }
-        public float UnitCover { get; set; }
+        public double AppliedLayers { get; set; }
+        public double ConsumptionX { get; set; }
+        public double ConsumptionZ { get; set; }
+        public double UnitCover { get; set; }
+        public Guid ProviderId { get; set; }
         public Material Material { get; set; }
+        public Provider Provider { get; set; }
     }
 }

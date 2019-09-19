@@ -1,4 +1,5 @@
 using Calculus.Core.Models.GraphQl.enums;
+using Calculus.Core.Models.SecondaryModels;
 using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.schemas;
 using Calculus.GraphQL.schemas.models;
@@ -20,6 +21,8 @@ namespace Calculus.IoC
             services.AddScoped<IRoomRepository, RoomRepository>();
             services.AddScoped<IRoomWallObjectRepository, RoomWallObjectRepository>();
             services.AddScoped<IRoomJobRepository, RoomJobRepository>();
+            services.AddScoped<IMaterialRepository, MaterialRepository>();
+            services.AddScoped<IMaterialInformationRepository, MaterialInformationRepository>();
         }
 
         public static void ResolveGraphQl(IServiceCollection services)
@@ -37,7 +40,9 @@ namespace Calculus.IoC
             services.AddScoped<ISchemaGroup, RoomSchema>();
             services.AddScoped<ISchemaGroup, RoomWallObjectSchema>();
             services.AddScoped<ISchemaGroup, RoomJobSchema>();
-
+            services.AddScoped<ISchemaGroup, MaterialSchema>();
+            services.AddScoped<ISchemaGroup, MaterialInformationSchema>();
+            
             services.AddScoped<RootSchema>();
             services.AddScoped<RootMutation>();
             services.AddScoped<ISchema, RootSchema>();

@@ -75,12 +75,12 @@ namespace Calculus.Context
                 .HasOne(rj => rj.Room)
                 .WithMany(r => r.RoomJobs)
                 .HasForeignKey(rj => rj.RoomId);
-
-            modelBuilder.Entity<Provider>()
-                .HasOne(p => p.Material)
-                .WithOne(m => m.Provider)
-                .HasForeignKey<Provider>(p => p.MaterialId);
-
+            
+            modelBuilder.Entity<Material>()
+                .HasOne(t => t.RoomJob)
+                .WithMany(t => t.Materials)
+                .HasForeignKey(t => t.RoomJobId);
+            
             modelBuilder.Entity<MaterialExpenditure>()
                 .HasOne(me => me.Material)
                 .WithOne(m => m.MaterialExpenditure)
@@ -90,6 +90,11 @@ namespace Calculus.Context
                 .HasOne(mi => mi.Material)
                 .WithOne(m => m.MaterialInformation)
                 .HasForeignKey<MaterialInformation>(mi => mi.MaterialId);
+
+            modelBuilder.Entity<MaterialInformation>()
+                .HasOne(mi => mi.Provider)
+                .WithMany(t => t.MaterialInformations)
+                .HasForeignKey(mi => mi.ProviderId);
         }
 
         private static void SetAllIndex(ModelBuilder modelBuilder)

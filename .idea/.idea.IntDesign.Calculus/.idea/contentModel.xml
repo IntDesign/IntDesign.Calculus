@@ -23,6 +23,14 @@
                 <e p="HouseCreateViewModel.cs" t="Include" />
                 <e p="HouseFilteredRequestType.cs" t="Include" />
               </e>
+              <e p="material" t="Include">
+                <e p="MaterialCreateViewModel.cs" t="Include" />
+                <e p="MaterialFilterRequestType.cs" t="Include" />
+              </e>
+              <e p="materialInformation" t="Include">
+                <e p="MaterialInformationCreateViewModel.cs" t="Include" />
+                <e p="MaterialInformationFilterRequestType.cs" t="Include" />
+              </e>
               <e p="room" t="Include">
                 <e p="RoomCreateViewModel.cs" t="Include" />
                 <e p="RoomFilteredRequestType.cs" t="Include" />
@@ -38,6 +46,8 @@
             </e>
             <e p="output" t="Include">
               <e p="HouseQueryType.cs" t="Include" />
+              <e p="MaterialInformationQueryType.cs" t="Include" />
+              <e p="MaterialQueryType.cs" t="Include" />
               <e p="RoomJobQueryType.cs" t="Include" />
               <e p="RoomQueryType.cs" t="Include" />
               <e p="RoomWallObjectQueryType.cs" t="Include" />
@@ -50,6 +60,8 @@
           </e>
           <e p="mutation" t="Include">
             <e p="HouseMutation.cs" t="Include" />
+            <e p="MaterialInformationMutation.cs" t="Include" />
+            <e p="MaterialMutation.cs" t="Include" />
             <e p="RoomJobMutation.cs" t="Include" />
             <e p="RoomMutation.cs" t="Include" />
             <e p="RoomWallObjectMutation.cs" t="Include" />
@@ -57,6 +69,8 @@
           </e>
           <e p="queries" t="Include">
             <e p="HouseQueries.cs" t="Include" />
+            <e p="MaterialInformationQuery.cs" t="Include" />
+            <e p="MaterialQuery.cs" t="Include" />
             <e p="RoomJobQueries.cs" t="Include" />
             <e p="RoomQueries.cs" t="Include" />
             <e p="RoomWallObjectQueries.cs" t="Include" />
@@ -69,6 +83,8 @@
             <e p="RootSchema.cs" t="Include" />
             <e p="schemaGroups" t="Include">
               <e p="HouseSchema.cs" t="Include" />
+              <e p="MaterialInformationSchema.cs" t="Include" />
+              <e p="MaterialSchema.cs" t="Include" />
               <e p="RoomJobSchema.cs" t="Include" />
               <e p="RoomSchema.cs" t="Include" />
               <e p="RoomWallObjectSchema.cs" t="Include" />
@@ -106,6 +122,12 @@
           <e p="20190918091340_UpdateWallObjectsModel.Designer.cs" t="Include" />
           <e p="20190918105716_UpdateSecondaryModels.cs" t="Include" />
           <e p="20190918105716_UpdateSecondaryModels.Designer.cs" t="Include" />
+          <e p="20190918155832_UpdateConectionBetweenMainModelsAndSecondaryModels.cs" t="Include" />
+          <e p="20190918155832_UpdateConectionBetweenMainModelsAndSecondaryModels.Designer.cs" t="Include" />
+          <e p="20190918161824_UpdatedProviderModel.cs" t="Include" />
+          <e p="20190918161824_UpdatedProviderModel.Designer.cs" t="Include" />
+          <e p="20190919122408_UpdateMaterialInformationModel.cs" t="Include" />
+          <e p="20190919122408_UpdateMaterialInformationModel.Designer.cs" t="Include" />
           <e p="MainContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="NLog.Development.config" t="Include" />
@@ -123,12 +145,16 @@
         <e p="Repositories" t="Include">
           <e p="implementation" t="Include">
             <e p="HouseRepository.cs" t="Include" />
+            <e p="MaterialInformationRepository.cs" t="Include" />
+            <e p="MaterialRepository.cs" t="Include" />
             <e p="RoomJobRepository.cs" t="Include" />
             <e p="RoomRepository.cs" t="Include" />
             <e p="RoomWallObjectRepository.cs" t="Include" />
           </e>
           <e p="model" t="Include">
             <e p="IHouseRepository.cs" t="Include" />
+            <e p="IMaterialInformationRepository.cs" t="Include" />
+            <e p="IMaterialRepository.cs" t="Include" />
             <e p="IRoomJobRepository.cs" t="Include" />
             <e p="IRoomRepository.cs" t="Include" />
             <e p="IRoomWallObjectRepository.cs" t="Include" />
@@ -151,6 +177,8 @@
             </e>
             <e p="filters" t="Include">
               <e p="HouseFilter.cs" t="Include" />
+              <e p="MaterialFilter.cs" t="Include" />
+              <e p="MaterialInformationFilter.cs" t="Include" />
               <e p="RoomFilter.cs" t="Include" />
               <e p="RoomJobFilter.cs" t="Include" />
               <e p="RoomWallObjectFilter.cs" t="Include" />
