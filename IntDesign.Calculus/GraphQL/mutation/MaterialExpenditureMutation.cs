@@ -1,5 +1,5 @@
 using System;
-using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.Models;
 using Calculus.GraphQL.actionModel.input.materialExpenditure;
 using Calculus.GraphQL.actionModel.output;
 using Calculus.Repositories.model;

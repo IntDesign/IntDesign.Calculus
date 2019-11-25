@@ -1,5 +1,5 @@
-using Calculus.Core.Models.GraphQl.enums;
-using Calculus.Core.Models.MainModels;
+using Calculus.Core.GraphQl.enums;
+using Calculus.Core.Models;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModel.output

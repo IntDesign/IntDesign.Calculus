@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Calculus.Core.Models.Enums;
-using Calculus.Core.Models.SecondaryModels;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Enums;
+using Calculus.Core.Tools;
 
-namespace Calculus.Core.Models.MainModels
+namespace Calculus.Core.Models
 {
     public class RoomJob : IIdentifier
     {

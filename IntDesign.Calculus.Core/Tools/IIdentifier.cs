@@ -1,6 +1,6 @@
 using System;
 
-namespace Calculus.Core.Models.Tools
+namespace Calculus.Core.Tools
 {
     public interface IIdentifier
     {

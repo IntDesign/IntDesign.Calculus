@@ -12818,40 +12818,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gagiu Filip\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Filip\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
+      "projectUniqueName": "C:\\Users\\Filip\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
       "projectName": "IntDesign.Calculus",
-      "projectPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
-      "packagesPath": "C:\\Users\\Gagiu Filip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus\\obj\\",
+      "projectPath": "C:\\Users\\Filip\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\IntDesign.Calculus.csproj",
+      "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Filip\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gagiu Filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
-              "projectPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj"
+            "C:\\Users\\Filip\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj": {
+              "projectPath": "C:\\Users\\Filip\\Documents\\GitHubPersonal\\IntDesign.Calculus\\IntDesign.Calculus.Core\\IntDesign.Calculus.Core.csproj"
             }
           }
         }
@@ -12921,7 +12916,12 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true

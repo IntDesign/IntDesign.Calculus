@@ -1,4 +1,4 @@
-using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.Models;
 using Calculus.GraphQL.actionModel.input.material;
 using Calculus.GraphQL.actionModel.output;
 using Calculus.Repositories.model;

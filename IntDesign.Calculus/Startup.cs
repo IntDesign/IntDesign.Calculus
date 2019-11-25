@@ -1,5 +1,5 @@
 ﻿using Calculus.Context;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Tools;
 using Calculus.IoC;
 using GraphQL.Server;
 using GraphQL.Types;

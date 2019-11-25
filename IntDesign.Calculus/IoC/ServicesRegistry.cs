@@ -1,4 +1,4 @@
-using Calculus.Core.Models.GraphQl.enums;
+using Calculus.Core.GraphQl.enums;
 using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.schemas;
 using Calculus.GraphQL.schemas.models;

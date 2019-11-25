@@ -1,4 +1,4 @@
-using Calculus.Core.Models.GraphQl.requestHelpers;
+using Calculus.Core.GraphQl.requestHelpers;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.helpers

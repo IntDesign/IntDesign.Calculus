@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Gagiu Filip\.nuget\packages\nlog.schema\4.6.7\contentFiles\any\any\NLog.xsd" t="Include" />
-    <e p="C:\Users\Gagiu Filip\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Gagiu Filip\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_IntDesign.Calculus.-1109008889.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus" t="IncludeFlat">
+    <e p="C:\Users\Filip\.nuget\packages\nlog.schema\4.6.7\contentFiles\any\any\NLog.xsd" t="Include" />
+    <e p="C:\Users\Filip\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Filip\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Filip\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_IntDesign.Calculus.-748270272.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Filip\Documents\GitHubPersonal\IntDesign.Calculus" t="IncludeFlat">
       <e p="IntDesign.Calculus" t="IncludeRecursive">
         <e p="app.config" t="Include" />
         <e p="appsettings.json" t="Include" />
@@ -178,48 +179,39 @@
       </e>
       <e p="IntDesign.Calculus.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="JobRequestType.cs" t="Include" />
+          <e p="RoomObjectType.cs" t="Include" />
+          <e p="RoomType.cs" t="Include" />
+        </e>
+        <e p="GraphQL" t="Include">
+          <e p="Enums" t="Include">
+            <e p="EnumTypes.cs" t="Include" />
+          </e>
+          <e p="filters" t="Include">
+            <e p="HouseFilter.cs" t="Include" />
+            <e p="MaterialExpenditureFilter.cs" t="Include" />
+            <e p="MaterialFilter.cs" t="Include" />
+            <e p="MaterialInformationFilter.cs" t="Include" />
+            <e p="RoomFilter.cs" t="Include" />
+            <e p="RoomJobFilter.cs" t="Include" />
+            <e p="RoomWallObjectFilter.cs" t="Include" />
+          </e>
+          <e p="requestHelpers" t="Include">
+            <e p="OrderedRequest.cs" t="Include" />
+            <e p="PagedRequest.cs" t="Include" />
+          </e>
+        </e>
         <e p="IntDesign.Calculus.Core.csproj" t="IncludeRecursive" />
         <e p="models" t="Include">
-          <e p="Enums" t="Include">
-            <e p="JobRequestType.cs" t="Include" />
-            <e p="RoomObjectType.cs" t="Include" />
-            <e p="RoomType.cs" t="Include" />
-          </e>
-          <e p="GraphQL" t="Include">
-            <e p="Enums" t="Include">
-              <e p="EnumTypes.cs" t="Include" />
-            </e>
-            <e p="filters" t="Include">
-              <e p="HouseFilter.cs" t="Include" />
-              <e p="MaterialExpenditureFilter.cs" t="Include" />
-              <e p="MaterialFilter.cs" t="Include" />
-              <e p="MaterialInformationFilter.cs" t="Include" />
-              <e p="RoomFilter.cs" t="Include" />
-              <e p="RoomJobFilter.cs" t="Include" />
-              <e p="RoomWallObjectFilter.cs" t="Include" />
-            </e>
-            <e p="requestHelpers" t="Include">
-              <e p="OrderedRequest.cs" t="Include" />
-              <e p="PagedRequest.cs" t="Include" />
-            </e>
-          </e>
-          <e p="MainModels" t="Include">
-            <e p="House.cs" t="Include" />
-            <e p="Room.cs" t="Include" />
-            <e p="RoomJob.cs" t="Include" />
-            <e p="RoomWallObject.cs" t="Include" />
-          </e>
-          <e p="SecondaryModels" t="Include">
-            <e p="Material.cs" t="Include" />
-            <e p="MaterialExpenditure.cs" t="Include" />
-            <e p="MaterialInformation.cs" t="Include" />
-            <e p="Provider.cs" t="Include" />
-          </e>
-          <e p="Tools" t="Include">
-            <e p="AppSettings.cs" t="Include" />
-            <e p="IIdentifier.cs" t="Include" />
-            <e p="ISearchTermFilter.cs" t="Include" />
-          </e>
+          <e p="House.cs" t="Include" />
+          <e p="Material.cs" t="Include" />
+          <e p="MaterialExpenditure.cs" t="Include" />
+          <e p="MaterialInformation.cs" t="Include" />
+          <e p="Provider.cs" t="Include" />
+          <e p="Room.cs" t="Include" />
+          <e p="RoomJob.cs" t="Include" />
+          <e p="RoomWallObject.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -227,6 +219,11 @@
               <e p="IntDesign.Calculus.Core.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Tools" t="Include">
+          <e p="AppSettings.cs" t="Include" />
+          <e p="IIdentifier.cs" t="Include" />
+          <e p="ISearchTermFilter.cs" t="Include" />
         </e>
       </e>
       <e p="IntDesign.Calculus.sln" t="IncludeFlat" />

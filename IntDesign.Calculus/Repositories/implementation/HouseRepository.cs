@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Calculus.Context;
 using Calculus.Context.extensions;
-using Calculus.Core.Models.GraphQl.filters;
-using Calculus.Core.Models.GraphQl.requestHelpers;
-using Calculus.Core.Models.MainModels;
+using Calculus.Core.GraphQl.filters;
+using Calculus.Core.GraphQl.requestHelpers;
+using Calculus.Core.Models;
 using Calculus.Repositories.model;
 using Microsoft.EntityFrameworkCore;
 

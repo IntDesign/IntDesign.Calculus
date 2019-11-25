@@ -1,28 +1,27 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Calculus.Core.Models.SecondaryModels;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Models;
+using Calculus.Core.Tools;
 
-namespace Calculus.Core.Models.GraphQl.filters
+namespace Calculus.Core.GraphQl.filters
 {
-    public class MaterialExpenditureFilter : ISearchTermFilter<IQueryable<MaterialExpenditure>>
+    public class MaterialInformationFilter : ISearchTermFilter<IQueryable<MaterialInformation>>
     {
         public string SearchTerm { get; set; }
         public List<Guid> Ids { get; } = new List<Guid>();
         
-        public MaterialExpenditureFilter()
+        public MaterialInformationFilter()
         {
-            
         }
 
-        public MaterialExpenditureFilter(string searchTerm = null, List<Guid> ids = null)
+        public MaterialInformationFilter(string searchTerm = null, List<Guid> ids = null)
         {
             SearchTerm = searchTerm;
             Ids = ids;
         }
         
-        public IQueryable<MaterialExpenditure> Filter(IQueryable<MaterialExpenditure> filterQuery)
+        public IQueryable<MaterialInformation> Filter(IQueryable<MaterialInformation> filterQuery)
         {
             if (!string.IsNullOrEmpty(SearchTerm))
             {
