@@ -12,6 +12,7 @@
 
     <ItemGroup>
         <PackageReference Include="GraphQL" Version="2.4.0" />
+        <PackageReference Include="GraphQL-Parser" Version="4.1.1" />
     </ItemGroup>
 
 </Project>

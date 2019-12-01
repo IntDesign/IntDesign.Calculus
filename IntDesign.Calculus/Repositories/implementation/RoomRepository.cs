@@ -86,6 +86,7 @@ namespace Calculus.Repositories.implementation
             {
                 room.TilesParquetCoefficient = room.Atv - room.CustomLenght * room.CustomWidth;
                 room.SpecialTilesParquetCoefficient = room.CustomLenght * room.CustomWidth;
+                //todo calculate roomWallObject if window with a error coefficient of -0.3f from area 
             }
         }
     }

@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <PackageReference Include="GraphQL" Version="2.4.0" />
+        <PackageReference Include="GraphQL-Parser" Version="4.1.1" />
         <PackageReference Include="GraphQL.EntityFramework" Version="7.1.0" />
         <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
         <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />

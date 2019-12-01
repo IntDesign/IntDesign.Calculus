@@ -14,7 +14,7 @@
         "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
@@ -46,6 +46,10 @@
             "GraphQL": {
               "target": "Package",
               "version": "[2.4.0, )"
+            },
+            "GraphQL-Parser": {
+              "target": "Package",
+              "version": "[4.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

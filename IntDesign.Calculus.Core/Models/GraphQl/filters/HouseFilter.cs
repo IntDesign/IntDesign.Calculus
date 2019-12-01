@@ -8,8 +8,8 @@ namespace Calculus.Core.Models.GraphQl.filters
 {
     public class HouseFilter : ISearchTermFilter<IQueryable<House>>
     {
-        public List<Guid> Ids { get; } = new List<Guid>();
-        public List<string> Names { get; } = new List<string>();
+        public List<Guid> Ids { get; set; } = new List<Guid>();
+        public List<string> Names { get; set; } = new List<string>();
 
         public HouseFilter()
         {

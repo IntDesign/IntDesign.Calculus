@@ -18,16 +18,13 @@
           "lib/netstandard2.0/GraphQL.dll": {}
         }
       },
-      "GraphQL-Parser/3.0.0": {
+      "GraphQL-Parser/4.1.1": {
         "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.0"
-        },
         "compile": {
-          "lib/netstandard1.1/GraphQL-Parser.dll": {}
+          "lib/netstandard2.0/GraphQL-Parser.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.1/GraphQL-Parser.dll": {}
+          "lib/netstandard2.0/GraphQL-Parser.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -969,17 +966,16 @@
         "lib/netstandard2.0/GraphQL.dll"
       ]
     },
-    "GraphQL-Parser/3.0.0": {
-      "sha512": "6vPhia+kfo44leH7GNAo4g/BRVxvprtu+96N4T218dTM/0KYhRCA8diqZFIib777TgKZpQfaaL014McoCuHTJA==",
+    "GraphQL-Parser/4.1.1": {
+      "sha512": "2v7U3SEBL0l+ajhfMOOVbcvOjhx9akbZGPLtNJQBrb4ZXGQsW7m23dxoYTmsSPqsi/KMkvJdRCtnU7Rh8jH+0w==",
       "type": "package",
-      "path": "graphql-parser/3.0.0",
+      "path": "graphql-parser/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "graphql-parser.3.0.0.nupkg.sha512",
+        "graphql-parser.4.1.1.nupkg.sha512",
         "graphql-parser.nuspec",
-        "lib/net45/GraphQL-Parser.dll",
-        "lib/netstandard1.1/GraphQL-Parser.dll"
+        "lib/netstandard2.0/GraphQL-Parser.dll"
       ]
     },
     "Microsoft.CSharp/4.3.0": {
@@ -4082,12 +4078,13 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "GraphQL >= 2.4.0",
+      "GraphQL-Parser >= 4.1.1",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Gagiu Filip\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -4100,7 +4097,7 @@
       "outputPath": "C:\\Users\\Gagiu Filip\\Documents\\GitHub\\IntDesign.Calculus\\IntDesign.Calculus.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Microsoft\\Xamarin\\NuGet",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
@@ -4132,6 +4129,10 @@
           "GraphQL": {
             "target": "Package",
             "version": "[2.4.0, )"
+          },
+          "GraphQL-Parser": {
+            "target": "Package",
+            "version": "[4.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",

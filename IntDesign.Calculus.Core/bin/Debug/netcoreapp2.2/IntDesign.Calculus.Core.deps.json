@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "5ad925ce2554bc54f1d84d9e94a4dfd12168e4f9"
+    "signature": "c8e61f67d504ceacf6a56c02d846632b0ed5d360"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "IntDesign.Calculus.Core/1.0.0": {
         "dependencies": {
-          "GraphQL": "2.4.0"
+          "GraphQL": "2.4.0",
+          "GraphQL-Parser": "4.1.1"
         },
         "runtime": {
           "IntDesign.Calculus.Core.dll": {}
@@ -16,7 +17,7 @@
       },
       "GraphQL/2.4.0": {
         "dependencies": {
-          "GraphQL-Parser": "3.0.0",
+          "GraphQL-Parser": "4.1.1",
           "Newtonsoft.Json": "10.0.3",
           "System.Buffers": "4.5.0",
           "System.Reactive.Core": "3.1.1",
@@ -29,11 +30,11 @@
           }
         }
       },
-      "GraphQL-Parser/3.0.0": {
+      "GraphQL-Parser/4.1.1": {
         "runtime": {
-          "lib/netstandard1.1/GraphQL-Parser.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+          "lib/netstandard2.0/GraphQL-Parser.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.1.0"
           }
         }
       },
@@ -466,12 +467,12 @@
       "path": "graphql/2.4.0",
       "hashPath": "graphql.2.4.0.nupkg.sha512"
     },
-    "GraphQL-Parser/3.0.0": {
+    "GraphQL-Parser/4.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6vPhia+kfo44leH7GNAo4g/BRVxvprtu+96N4T218dTM/0KYhRCA8diqZFIib777TgKZpQfaaL014McoCuHTJA==",
-      "path": "graphql-parser/3.0.0",
-      "hashPath": "graphql-parser.3.0.0.nupkg.sha512"
+      "sha512": "sha512-2v7U3SEBL0l+ajhfMOOVbcvOjhx9akbZGPLtNJQBrb4ZXGQsW7m23dxoYTmsSPqsi/KMkvJdRCtnU7Rh8jH+0w==",
+      "path": "graphql-parser/4.1.1",
+      "hashPath": "graphql-parser.4.1.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",

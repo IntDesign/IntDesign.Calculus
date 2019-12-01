@@ -37,15 +37,15 @@ namespace Calculus.GraphQL.helpers
     {
     }
     
-    public class ListMaterialQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    public class ListMaterialQueryModelType : ListResponseType<MaterialQueryType>
     {
     }
     
-    public class ListMaterialInformationQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    public class ListMaterialInformationQueryModelType : ListResponseType<MaterialInformationQueryType>
     {
     }
     
-    public class ListMaterialExpenditureQueryModelType : ListResponseType<RoomWallObjectQueryType>
+    public class ListMaterialExpenditureQueryModelType : ListResponseType<MaterialExpenditureQueryType>
     {
     }
 }

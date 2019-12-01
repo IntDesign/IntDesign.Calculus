@@ -10,8 +10,8 @@ namespace Calculus.Core.Models.GraphQl.filters
     {
         
         public string SearchTerm { get; set; }
-        public List<Guid> Ids { get; } = new List<Guid>();
-        public List<string> Names { get; } = new List<string>();
+        public List<Guid> Ids { get; set; } = new List<Guid>();
+        public List<string> Names { get; set; } = new List<string>();
         public MaterialFilter()
         {
         }

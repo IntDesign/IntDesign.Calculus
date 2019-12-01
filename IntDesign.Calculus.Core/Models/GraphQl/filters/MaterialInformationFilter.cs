@@ -9,7 +9,7 @@ namespace Calculus.Core.Models.GraphQl.filters
     public class MaterialInformationFilter : ISearchTermFilter<IQueryable<MaterialInformation>>
     {
         public string SearchTerm { get; set; }
-        public List<Guid> Ids { get; } = new List<Guid>();
+        public List<Guid> Ids { get; set; } = new List<Guid>();
         
         public MaterialInformationFilter()
         {

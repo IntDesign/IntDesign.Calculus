@@ -8,7 +8,7 @@ namespace Calculus.Core.Models.GraphQl.filters
 {
     public class RoomJobFilter : ISearchTermFilter<IQueryable<RoomJob>>
     {
-        public List<Guid> Ids { get; } = new List<Guid>();
+        public List<Guid> Ids { get; set; } = new List<Guid>();
 
         public RoomJobFilter()
         {
