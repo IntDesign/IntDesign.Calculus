@@ -1,4 +1,4 @@
-using Calculus.Core.Models.GraphQl.filters;
+using Calculus.Core.GraphQl.filters;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModel.input.room

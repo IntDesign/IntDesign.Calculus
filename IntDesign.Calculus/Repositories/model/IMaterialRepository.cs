@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Calculus.Core.Models.GraphQl.filters;
-using Calculus.Core.Models.GraphQl.requestHelpers;
-using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.GraphQl.filters;
+using Calculus.Core.GraphQl.requestHelpers;
+using Calculus.Core.Models;
 
 namespace Calculus.Repositories.model
 {

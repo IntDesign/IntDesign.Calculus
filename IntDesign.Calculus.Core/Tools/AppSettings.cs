@@ -1,4 +1,4 @@
-namespace Calculus.Core.Models.Tools
+namespace Calculus.Core.Tools
 {
     public class AppSettings
     {

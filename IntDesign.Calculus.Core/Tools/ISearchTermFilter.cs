@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace Calculus.Core.Models.Tools
+namespace Calculus.Core.Tools
 {
     public interface ISearchTermFilter<T> where T : IQueryable<IIdentifier>
     {

@@ -1,4 +1,4 @@
-using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.Models;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModel.input.material

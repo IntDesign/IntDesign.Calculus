@@ -1,4 +1,4 @@
-namespace Calculus.Core.Models.GraphQl.requestHelpers
+namespace Calculus.Core.GraphQl.requestHelpers
 {
     public class PagedRequest
     {

@@ -1,4 +1,4 @@
-using Calculus.Core.Models.MainModels;
+using Calculus.Core.Models;
 using Calculus.GraphQL.actionModel.input.roomWallObject;
 using Calculus.GraphQL.actionModel.output;
 using Calculus.Repositories.model;

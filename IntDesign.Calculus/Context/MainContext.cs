@@ -1,8 +1,7 @@
 using System;
-using Calculus.Core.Models.Enums;
-using Calculus.Core.Models.MainModels;
-using Calculus.Core.Models.SecondaryModels;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Enums;
+using Calculus.Core.Models;
+using Calculus.Core.Tools;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 

@@ -1,5 +1,5 @@
-using Calculus.Core.Models.GraphQl.enums;
-using Calculus.Core.Models.GraphQl.requestHelpers;
+using Calculus.Core.GraphQl.enums;
+using Calculus.Core.GraphQl.requestHelpers;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.helpers

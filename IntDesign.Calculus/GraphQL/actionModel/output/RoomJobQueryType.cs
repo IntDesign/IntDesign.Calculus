@@ -1,4 +1,4 @@
-using Calculus.Core.Models.MainModels;
+using Calculus.Core.Models;
 using GraphQL.Types;
 
 namespace Calculus.GraphQL.actionModel.output

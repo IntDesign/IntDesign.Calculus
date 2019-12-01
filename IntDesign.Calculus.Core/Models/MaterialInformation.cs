@@ -1,7 +1,7 @@
 using System;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Tools;
 
-namespace Calculus.Core.Models.SecondaryModels
+namespace Calculus.Core.Models
 {
     public class MaterialInformation : IIdentifier
     {

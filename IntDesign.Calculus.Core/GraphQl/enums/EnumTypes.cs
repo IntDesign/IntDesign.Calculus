@@ -1,8 +1,8 @@
-using Calculus.Core.Models.Enums;
-using Calculus.Core.Models.GraphQl.requestHelpers;
+using Calculus.Core.Enums;
+using Calculus.Core.GraphQl.requestHelpers;
 using GraphQL.Types;
 
-namespace Calculus.Core.Models.GraphQl.enums
+namespace Calculus.Core.GraphQl.enums
 {
     public class OrderDirectionEnum : EnumerationGraphType<OrderDirection>
     {

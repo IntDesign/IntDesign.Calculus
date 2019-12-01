@@ -1,4 +1,4 @@
-namespace Calculus.Core.Models.Enums
+namespace Calculus.Core.Enums
 {
     public enum JobRequestType
     {

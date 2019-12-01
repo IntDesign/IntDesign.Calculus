@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Calculus.Core.Models.SecondaryModels;
-using Calculus.Core.Models.Tools;
+using Calculus.Core.Models;
+using Calculus.Core.Tools;
 
-namespace Calculus.Core.Models.GraphQl.filters
+namespace Calculus.Core.GraphQl.filters
 {
     public class MaterialInformationFilter : ISearchTermFilter<IQueryable<MaterialInformation>>
     {

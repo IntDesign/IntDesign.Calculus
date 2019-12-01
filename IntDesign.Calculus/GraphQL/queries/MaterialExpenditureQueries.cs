@@ -1,7 +1,7 @@
 using System;
-using Calculus.Core.Models.GraphQl.filters;
-using Calculus.Core.Models.GraphQl.requestHelpers;
-using Calculus.Core.Models.SecondaryModels;
+using Calculus.Core.GraphQl.filters;
+using Calculus.Core.GraphQl.requestHelpers;
+using Calculus.Core.Models;
 using Calculus.GraphQL.actionModel.input.materialExpenditure;
 using Calculus.GraphQL.helpers;
 using Calculus.Repositories.model;
