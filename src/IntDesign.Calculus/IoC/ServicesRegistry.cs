@@ -3,6 +3,8 @@ using Calculus.GraphQL.mutation;
 using Calculus.GraphQL.schemas;
 using Calculus.GraphQL.schemas.models;
 using Calculus.GraphQL.schemas.schemaGroups;
+using Calculus.Handlers.implementations;
+using Calculus.Handlers.models;
 using Calculus.Repositories.implementation;
 using Calculus.Repositories.model;
 using GraphQL;
@@ -25,6 +27,12 @@ namespace Calculus.IoC
             services.AddScoped<IMaterialExpenditureRepository, MaterialExpenditureRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
         }
+        
+        public static void ResolveHandlers(IServiceCollection services)
+        {
+            services.AddScoped<ILoginHandler, LoginHandler>();
+     
+        }
 
         public static void ResolveGraphQl(IServiceCollection services)
         {
@@ -45,6 +53,7 @@ namespace Calculus.IoC
             services.AddScoped<ISchemaGroup, MaterialInformationSchema>();
             services.AddScoped<ISchemaGroup, MaterialExpenditureSchema>();
             services.AddScoped<ISchemaGroup, UserSchema>();
+            services.AddScoped<ISchemaGroup, LoginSchema>();
 
             services.AddScoped<RootSchema>();
             services.AddScoped<RootMutation>();

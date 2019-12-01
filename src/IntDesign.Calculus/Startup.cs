@@ -16,14 +16,16 @@ namespace Calculus
         private readonly IConfiguration m_configuration;
 
         public Startup(IConfiguration configuration) => m_configuration = configuration;
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.Configure<AppSettings>(m_configuration.GetSection("AppSettings"));
             services.AddScoped<AppSettings>();
             services.AddDbContext<DataContext>();
+            
             ServicesRegistry.ResolveRepositories(services);
+            ServicesRegistry.ResolveHandlers(services);
             ServicesRegistry.ResolveGraphQl(services);
         }
 
@@ -34,6 +36,7 @@ namespace Calculus
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseGraphQL<ISchema>();
             app.Run(async context => { await context.Response.WriteAsync("Hello World!"); });
         }
