@@ -1,9 +1,0 @@
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\bin\Release\netcoreapp2.2\IntDesign.Calculus.Core.deps.json
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\bin\Release\netcoreapp2.2\IntDesign.Calculus.Core.dll
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\bin\Release\netcoreapp2.2\IntDesign.Calculus.Core.pdb
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.csprojAssemblyReference.cache
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.csproj.CoreCompileInputs.cache
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.AssemblyInfoInputs.cache
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.AssemblyInfo.cs
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.dll
-C:\Users\Gagiu Filip\Documents\GitHub\IntDesign.Calculus\IntDesign.Calculus.Core\obj\Release\netcoreapp2.2\IntDesign.Calculus.Core.pdb
