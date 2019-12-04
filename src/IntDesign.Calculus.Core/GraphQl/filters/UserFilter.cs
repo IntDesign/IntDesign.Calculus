@@ -9,8 +9,13 @@ namespace Calculus.Core.GraphQl.filters
     public class UserFilter : ISearchTermFilter<IQueryable<User>>
     {
         public string SearchTerm { get; set; }
-        public List<Guid> Ids { get; set; }
-        public List<string> Names { get; set; }
+        public List<Guid> Ids { get; set; } = new List<Guid>();
+        public List<string> Names { get; set; } = new List<string>();
+
+        public UserFilter()
+        {
+            
+        }
         
         public UserFilter(string searchTerm = null, List<Guid> ids = null, List<string> names = null)
         {
