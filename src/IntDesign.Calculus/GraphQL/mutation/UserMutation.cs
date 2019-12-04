@@ -17,12 +17,12 @@ namespace Calculus.GraphQL.mutation
                 "addUser",
                 arguments: new QueryArguments(new QueryArgument<NonNullGraphType<UserCreateViewModel>>
                 {
-                    Name = "USER"
+                    Name = "user"
                 }),
                 resolve: async context =>
                 {
-                    var house = context.GetArgument<User>("user");
-                    return await context.TryAsyncResolve(async _ => await repository.AddUser(house));
+                    var user = context.GetArgument<User>("user");
+                    return await context.TryAsyncResolve(async _ => await repository.AddUser(user));
                 }
             );
         }
