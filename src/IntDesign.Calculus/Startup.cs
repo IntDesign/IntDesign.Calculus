@@ -13,7 +13,6 @@ namespace Calculus
 {
     public class Startup
     {
-
         private readonly IConfiguration m_configuration;
 
         public Startup(IConfiguration configuration) => m_configuration = configuration;
