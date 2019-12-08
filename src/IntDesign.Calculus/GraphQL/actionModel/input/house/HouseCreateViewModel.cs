@@ -15,8 +15,8 @@ namespace Calculus.GraphQL.actionModel.input.house
                 .Description("The Owner Phone");
             Field(t => t.OwnerEmail, true, typeof(StringGraphType))
                 .Description("The Owner email");
-            Field(t => t.User, false, typeof(NonNullGraphType<StringGraphType>))
-                .Description("The User that have this house");
+            Field(t => t.UserId, false, typeof(NonNullGraphType<StringGraphType>))
+                .Description("The User Id that have this house");
         }
     }
 }
